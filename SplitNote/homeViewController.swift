@@ -74,7 +74,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         open.setTitleColor(UIColor(displayP3Red: 115/255, green: 75/255, blue: 109/255, alpha: 1.0), for: [])
         open.backgroundColor = UIColor.white
         open.layer.cornerRadius = 25
-        open.addTarget(self, action: #selector(openNotes(_:)), for: .touchUpInside)
+        open.addTarget(self, action: #selector(openFolders(_:)), for: .touchUpInside)
         
         view.addSubview(homeView)
         view.addSubview(new)
@@ -97,7 +97,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBAction func newNote(_ sender: Any?) {
         print("New Recording Started")
-        self.present(NewNoteViewController(), animated: true, completion: nil)
+        self.present(UINavigationController(rootViewController: NewNoteViewController()), animated: true, completion: nil)
         
     }
     
@@ -105,10 +105,9 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 //        let destination = segue.destination as! NewNoteViewController
 //    }
     
-    @IBAction func openNotes(_ sender: Any?) {
-
-        
-        
+    @IBAction func openFolders(_ sender: Any?) {
+        print("Opening Folders")
+        self.present(UINavigationController(rootViewController: FolderViewController()), animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
