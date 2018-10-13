@@ -96,10 +96,14 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
     @IBAction func newNote(_ sender: Any?) {
-
-        
+        print("New Recording Started")
+        self.present(NewNoteViewController(), animated: true, completion: nil)
         
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let destination = segue.destination as! NewNoteViewController
+//    }
     
     @IBAction func openNotes(_ sender: Any?) {
 
