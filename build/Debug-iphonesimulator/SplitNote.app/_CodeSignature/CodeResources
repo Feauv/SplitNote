@@ -4,17 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
+		<key>Assets.car</key>
 		<data>
-		MxP8Lo5wzgS+xiMNm6dldnrXxgM=
-		</data>
-		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
-		<data>
-		n2t8gsDpfE6XkhG31p7IQJRxTxU=
-		</data>
-		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
-		<data>
-		VoZiwp789Ro0aTM+dXy97OAIL7U=
+		T4aJljJMCjDxv/WtdbxDQxHZTJs=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
@@ -88,6 +80,18 @@
 		<data>
 		eLiFBEwBqcP+Gkw66wN7bGdrs+k=
 		</data>
+		<key>Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
+		<data>
+		tgtaaPP533yutO+biZwiSD17l+M=
+		</data>
+		<key>Launch Screen.storyboardc/Info.plist</key>
+		<data>
+		n2t8gsDpfE6XkhG31p7IQJRxTxU=
+		</data>
+		<key>Launch Screen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
+		<data>
+		2pD//3RJ7yHBPvroLy1P5YTc6n8=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -111,25 +115,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
+		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WUo9SCbxMYz5HzXyubUrF748SqrJcgkpCnFqWY9wkxA=
-			</data>
-		</dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HyVdXMU7Ux4/KalAao30mpWOK/lEPT4gvYN09wf31cg=
-			</data>
-		</dict>
-		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YnoAfXpU0rQ+mpCCWGe3CDTyR9tdZSioWeJG8j5ltao=
+			RuHvm8GkK7h/00+NX021AB5ZbxPSd3I4PJtSnwYuykE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
@@ -249,6 +239,27 @@
 			<key>hash2</key>
 			<data>
 			t7O8p/CF1O4fSzBd82hHcReM//5TPoMP1tPSPaG23Sw=
+			</data>
+		</dict>
+		<key>Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LBoPUVcP7AYPZdRNi/gkjRsn4XblwfCq4ts0e0YKxpM=
+			</data>
+		</dict>
+		<key>Launch Screen.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HyVdXMU7Ux4/KalAao30mpWOK/lEPT4gvYN09wf31cg=
+			</data>
+		</dict>
+		<key>Launch Screen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ySPZoKyn8/mEcDeaut6h4pPVGTzA/oKDskemeI3lydY=
 			</data>
 		</dict>
 		<key>SplitNote.momd/SplitNote.mom</key>
