@@ -19,12 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UIStoryboard(name: "Launch Screen", bundle: nil).instantiateInitialViewController()
         window?.makeKeyAndVisible()
         
         //UINavigationController(rootViewController: NewNoteViewController())
         //UINavigationController(rootViewController: FolderViewController())
+
         
-        window?.rootViewController = homeViewController()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+            
+            self.window?.rootViewController = homeViewController()
+            
+        }
+        
         //window?.rootViewController = UINavigationController(rootViewController: NewNoteViewController())
         
         return true
