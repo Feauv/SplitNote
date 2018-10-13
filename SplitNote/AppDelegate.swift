@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UINavigationController(rootViewController: NewNoteViewController())
         //UINavigationController(rootViewController: FolderViewController())
         
-        //window?.rootViewController = homeViewController()
-        window?.rootViewController = UINavigationController(rootViewController: NewNoteViewController())
+        window?.rootViewController = homeViewController()
+        //window?.rootViewController = UINavigationController(rootViewController: NewNoteViewController())
         
         return true
     }
