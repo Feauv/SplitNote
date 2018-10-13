@@ -20,9 +20,17 @@
 		<data>
 		yw/FTq7uYkJWAPgZnM4RwjzFqUg=
 		</data>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		rDHYQKAISJLl0PzyBIZrEhvK7e4=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		/V070jhMfG9LOI/oCjb1/xjc0fA=
+		</data>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<data>
+		0kQib3E3RI0p8UDmjGCIqmJlrH8=
 		</data>
 		<key>Frameworks/libswiftCoreData.dylib</key>
 		<data>
@@ -39,6 +47,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		JereWsNtD+Y1L9wfV+9m/K5OOpA=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		/35Qb4+LUQIsqHOlSPbrCAzrj0A=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -76,9 +88,13 @@
 		<data>
 		SRyLe2wiFIlcQb4foDZ27lUv0Xo=
 		</data>
+		<key>Frameworks/libswiftsimd.dylib</key>
+		<data>
+		ajnBuliDmEN+Bq1OFd6fcMAuCFQ=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		eLiFBEwBqcP+Gkw66wN7bGdrs+k=
+		LB05wfSlvCyHl1EEJ+pBjYTK6Mw=
 		</data>
 		<key>Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -143,11 +159,25 @@
 			RV6/opFw8pTau55NY1Y/EaRAwy3MKcWgHnbF6dP0oz0=
 			</data>
 		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rGqE0Il3hwoO2zItfskKfgJPYsAovSymloL6JaAP3P4=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			NclrHcelKBjWkAN3bRFatUC+CmlURTdElAqJWuEBqlw=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p2HoKN3eneJhCubEzNHxkwvfB1PURbvjRCF/bGc81w8=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreData.dylib</key>
@@ -176,6 +206,13 @@
 			<key>hash2</key>
 			<data>
 			M1b4RDTvT6ablxikruWLNaBD+cP3GVXtZ6+wE91/Tj0=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7m1pW1HSGvYSF1HUxtOYn6/PiPK1oBWZbgpYUyjhab0=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
@@ -239,6 +276,13 @@
 			<key>hash2</key>
 			<data>
 			t7O8p/CF1O4fSzBd82hHcReM//5TPoMP1tPSPaG23Sw=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftsimd.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MnPLih+wT5CmFHCl39ZbWHJmV5N5baQwii+OwfW6C6k=
 			</data>
 		</dict>
 		<key>Launch Screen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>

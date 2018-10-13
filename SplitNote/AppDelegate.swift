@@ -22,13 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UIStoryboard(name: "Launch Screen", bundle: nil).instantiateInitialViewController()
         window?.makeKeyAndVisible()
         
-        //UINavigationController(rootViewController: NewNoteViewController())
-        //UINavigationController(rootViewController: FolderViewController())
-
-        
+//        UINavigationController(rootViewController: NewNoteViewController())
+//        UINavigationController(rootViewController: FolderViewController())
+//        UINavigationController(rootViewController: NotesViewController())
+//
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
             
-            self.window?.rootViewController = homeViewController()
+            self.window?.rootViewController = UINavigationController(rootViewController: FolderViewController())
             
         }
         
