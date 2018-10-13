@@ -70,7 +70,6 @@
 		4926E82121718F7800AFB28E /* SplitNote */ = {
 			isa = PBXGroup;
 			children = (
-				E2ADFD5221728AF300A90069 /* Launchboard */,
 				4926E82221718F7800AFB28E /* AppDelegate.swift */,
 				4926E82421718F7800AFB28E /* homeViewController.swift */,
 				95303F1D2171C2C5003519D3 /* newNoteViewController.swift */,
@@ -79,6 +78,7 @@
 				4926E8372171914F00AFB28E /* Model */,
 				4926E8382171916400AFB28E /* View */,
 				95303F2C21727284003519D3 /* Helpers */,
+				E2ADFD5221728AF300A90069 /* Launchboard */,
 				4926E82621718F7800AFB28E /* Main.storyboard */,
 				4926E82C21718F7A00AFB28E /* Assets.xcassets */,
 				4926E83121718F7A00AFB28E /* Info.plist */,
