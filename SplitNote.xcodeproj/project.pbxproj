@@ -15,6 +15,8 @@
 		4926E83021718F7A00AFB28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4926E82E21718F7A00AFB28E /* LaunchScreen.storyboard */; };
 		95303F1E2171C2C5003519D3 /* newNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F1D2171C2C5003519D3 /* newNoteViewController.swift */; };
 		95303F202171C2FD003519D3 /* recentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F1F2171C2FD003519D3 /* recentsCell.swift */; };
+		E2A18A872171EDA9001ECE3E /* note@3x@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A18A862171EDA9001ECE3E /* note@3x@3x.png */; };
+		E2A18A892171EE09001ECE3E /* SplitNoteGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A18A882171EE08001ECE3E /* SplitNoteGradient.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4926E83121718F7A00AFB28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95303F1D2171C2C5003519D3 /* newNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newNoteViewController.swift; sourceTree = "<group>"; };
 		95303F1F2171C2FD003519D3 /* recentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = recentsCell.swift; path = SplitNote/recentsCell.swift; sourceTree = SOURCE_ROOT; };
+		E2A18A862171EDA9001ECE3E /* note@3x@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "note@3x@3x.png"; sourceTree = "<group>"; };
+		E2A18A882171EE08001ECE3E /* SplitNoteGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplitNoteGradient.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		4926E82121718F7800AFB28E /* SplitNote */ = {
 			isa = PBXGroup;
 			children = (
+				E2A18A852171ED44001ECE3E /* Launchboard */,
 				4926E82221718F7800AFB28E /* AppDelegate.swift */,
 				4926E82421718F7800AFB28E /* homeViewController.swift */,
 				95303F1D2171C2C5003519D3 /* newNoteViewController.swift */,
@@ -67,7 +72,6 @@
 				4926E8382171916400AFB28E /* View */,
 				4926E82621718F7800AFB28E /* Main.storyboard */,
 				4926E82C21718F7A00AFB28E /* Assets.xcassets */,
-				4926E82E21718F7A00AFB28E /* LaunchScreen.storyboard */,
 				4926E83121718F7A00AFB28E /* Info.plist */,
 				4926E82921718F7800AFB28E /* SplitNote.xcdatamodeld */,
 			);
@@ -87,6 +91,16 @@
 				95303F1F2171C2FD003519D3 /* recentsCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E2A18A852171ED44001ECE3E /* Launchboard */ = {
+			isa = PBXGroup;
+			children = (
+				E2A18A862171EDA9001ECE3E /* note@3x@3x.png */,
+				4926E82E21718F7A00AFB28E /* LaunchScreen.storyboard */,
+				E2A18A882171EE08001ECE3E /* SplitNoteGradient.png */,
+			);
+			path = Launchboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4926E83021718F7A00AFB28E /* LaunchScreen.storyboard in Resources */,
+				E2A18A872171EDA9001ECE3E /* note@3x@3x.png in Resources */,
 				4926E82D21718F7A00AFB28E /* Assets.xcassets in Resources */,
+				E2A18A892171EE09001ECE3E /* SplitNoteGradient.png in Resources */,
 				4926E82821718F7800AFB28E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CY884D2HTC;
 				INFOPLIST_FILE = SplitNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CY884D2HTC;
 				INFOPLIST_FILE = SplitNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
