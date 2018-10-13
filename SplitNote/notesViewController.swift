@@ -8,15 +8,23 @@
 
 import UIKit
 
-//class NotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-//    
-//    
+class NotesViewController: UIViewController/*, UITableViewDataSource, UITableViewDelegate*/ {
+    
+    @IBOutlet var notes: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .white
+        
+    }
+    
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        <#code#>
 //    }
-//    
+//
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        <#code#>
 //    }
-//    
-//}
+//
+}

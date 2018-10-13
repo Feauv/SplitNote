@@ -265,6 +265,15 @@ SWIFT_CLASS("_TtC9SplitNote21NewNoteViewController")
 @end
 
 
+SWIFT_CLASS("_TtC9SplitNote19NotesViewController")
+@interface NotesViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified notes;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9SplitNote11RecentsCell")
 @interface RecentsCell : UITableViewCell
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
