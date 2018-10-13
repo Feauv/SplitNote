@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Speech
 
 class NewNoteViewController: UIViewController {
     
@@ -22,7 +23,12 @@ class NewNoteViewController: UIViewController {
     @IBOutlet var divider: UIView!
     @IBOutlet var recordingInterface: UIView!
     
+    var flaggingBool = false
     var recordingBool = false
+    let audioEngine = AVAudioEngine()
+    let speechRecognizer = SFSpeechRecognizer()
+    let request = SFSpeechAudioBufferRecognitionRequest()
+    var recognitionTask: SFSpeechRecognitionTask?
     
     var SplitNoteDarkPurple = UIColor(displayP3Red: 66/255, green: 39/255, blue: 90/255, alpha: 1.0)
     var SplitNoteLightPurple = UIColor(displayP3Red: 115/255, green: 75/255, blue: 109/255, alpha: 1.0)
@@ -47,7 +53,86 @@ class NewNoteViewController: UIViewController {
         
         setupComponents()
         setupNavigationBarItems()
+        self.requestSpeechAuthorization()
 
+    }
+    
+    fileprivate func startRecording() {
+        
+        // 1
+        let node = audioEngine.inputNode
+        let recordingFormat = node.outputFormat(forBus: 0)
+        
+        // 2
+        node.installTap(onBus: 0, bufferSize: 1024,
+                        format: recordingFormat) { [unowned self]
+                            (buffer, _) in
+                            self.request.append(buffer)
+        }
+        
+        // 3
+        do {
+            try audioEngine.start()
+        } catch {
+            return print(error)
+        }
+        guard let myRecognizer = SFSpeechRecognizer() else {
+            self.sendAlert(message: "Speech recognition is not supported for your current locale.")
+            return
+        }
+        if !myRecognizer.isAvailable {
+            self.sendAlert(message: "Speech recognition is not currently available. Check back at a later time.")
+            // Recognizer is not available right now
+            return
+        }
+        recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
+            if let result = result {
+                
+                let bestString = result.bestTranscription.formattedString
+                self.transcription.text = bestString
+                
+                var lastString: String = ""
+                for segment in result.bestTranscription.segments {
+                    let indexTo = bestString.index(bestString.startIndex, offsetBy: segment.substringRange.location)
+                    lastString = bestString.substring(from: indexTo)
+                }
+            } else if let error = error {
+                self.sendAlert(message: "There has been a speech recognition error.")
+                print(error)
+            }
+        })
+    }
+    
+    fileprivate func stopRecording() {
+        audioEngine.stop()
+        request.endAudio()
+        recognitionTask?.cancel()
+    }
+
+    func requestSpeechAuthorization() {
+        SFSpeechRecognizer.requestAuthorization { authStatus in
+            OperationQueue.main.addOperation {
+                switch authStatus {
+                case .authorized:
+                    self.record.isEnabled = true
+                case .denied:
+                    self.record.isEnabled = false
+                    self.transcription.text = "User denied access to speech recognition"
+                case .restricted:
+                    self.record.isEnabled = false
+                    self.transcription.text = "Speech recognition restricted on this device"
+                case .notDetermined:
+                    self.record.isEnabled = false
+                    self.transcription.text = "Speech recognition not yet authorized"
+                }
+            }
+        }
+    }
+    
+    func sendAlert(message: String) {
+        let alert = UIAlertController(title: "Speech Recognizer Error", message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     private func setupComponents() {
@@ -170,16 +255,25 @@ class NewNoteViewController: UIViewController {
         recordingBool = !recordingBool
         
         if (recordingBool) {
+            self.transcription.textColor = .white
             userMessage.text = "Recording..."
+            self.startRecording()
         } else {
             userMessage.text = ""
+            self.stopRecording()
         }
         
     }
     
     @IBAction func flagSpeech(_ sender: Any?) {
         
-
+        flaggingBool = !flaggingBool
+        
+        if (flaggingBool && recordingBool) {
+            self.transcription.textColor = .red
+        } else {
+            self.transcription.textColor = .white
+        }
         
     }
     
