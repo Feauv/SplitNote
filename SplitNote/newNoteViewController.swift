@@ -60,6 +60,8 @@ class NewNoteViewController: UIViewController {
         
         transcription = UILabel(frame: CGRect(x: 40, y: view.frame.height/16, width: view.frame.width - 80, height: 250))
         setSplitNoteStandardLabel(label: transcription)
+        transcription.layer.borderColor = UIColor.lightGray.cgColor
+        transcription.layer.borderWidth = 1.0
         
         flagLabel = UILabel(frame: CGRect(x: 40, y: view.frame.height - 230, width: view.frame.width - 160, height: 120))
         setSplitNoteStandardLabel(label: flagLabel)
@@ -133,7 +135,7 @@ class NewNoteViewController: UIViewController {
     
     private func setSplitNoteStandardLabel(label: UILabel) {
     
-        label.backgroundColor = .white
+        label.backgroundColor = UIColor(white: 1.0, alpha: 0.25)
         label.clipsToBounds = true
         label.layer.cornerRadius = 8
     

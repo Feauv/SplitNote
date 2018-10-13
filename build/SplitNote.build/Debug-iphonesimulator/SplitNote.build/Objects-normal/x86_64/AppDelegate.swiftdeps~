@@ -20,7 +20,6 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
 - "FloatLiteralType"
-- !private "FolderViewController"
 - "IntegerLiteralType"
 - !private "NSError"
 - "NSPersistentContainer"
@@ -35,7 +34,6 @@ depends-top-level:
 - !private "fatalError"
 depends-member:
 - ["9SplitNote11AppDelegateC", "Bool"]
-- !private ["9SplitNote11AppDelegateC", "FolderViewController"]
 - !private ["9SplitNote11AppDelegateC", "NSError"]
 - ["9SplitNote11AppDelegateC", "NSPersistentContainer"]
 - !private ["9SplitNote11AppDelegateC", "NewNoteViewController"]
@@ -68,7 +66,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
-- !private ["s7CVarArgP", "FolderViewController"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - !private ["s7CVarArgP", "NSPersistentContainer"]
 - !private ["s7CVarArgP", "NewNoteViewController"]
@@ -108,7 +105,6 @@ depends-member:
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "FolderViewController"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
 - !private ["s28CustomDebugStringConvertibleP", "NewNoteViewController"]
@@ -149,7 +145,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
-- !private ["s23CustomStringConvertibleP", "FolderViewController"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
 - !private ["s23CustomStringConvertibleP", "NewNoteViewController"]
@@ -191,7 +186,6 @@ depends-member:
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
-- !private ["SQ", "FolderViewController"]
 - ["SQ", "LaunchOptionsKey"]
 - !private ["SQ", "NSPersistentContainer"]
 - !private ["SQ", "NewNoteViewController"]
@@ -235,9 +229,6 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["9SplitNote20FolderViewControllerC", "deinit"]
-- !private ["9SplitNote20FolderViewControllerC", "init"]
-- !private ["SH", "FolderViewController"]
 - ["SH", "LaunchOptionsKey"]
 - !private ["SH", "NSPersistentContainer"]
 - !private ["SH", "NewNoteViewController"]
@@ -292,7 +283,6 @@ depends-member:
 - !private ["So22NSManagedObjectContextC", "hasChanges"]
 - !private ["So22NSManagedObjectContextC", "save"]
 - ["So8NSObjectC", "Bool"]
-- !private ["So8NSObjectC", "FolderViewController"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - !private ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "NSPersistentContainer"]
@@ -329,7 +319,6 @@ depends-member:
 - !private ["So8NSObjectC", "userInfo"]
 - !private ["So8NSObjectC", "viewContext"]
 - ["So8NSObjectC", "window"]
-- !private ["So8NSObjectP", "FolderViewController"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - !private ["So8NSObjectP", "NSPersistentContainer"]
 - !private ["So8NSObjectP", "NewNoteViewController"]
@@ -394,7 +383,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
-- !private ["So21UIApplicationDelegateP", "FolderViewController"]
 - !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
 - !private ["So21UIApplicationDelegateP", "NewNoteViewController"]
 - !private ["So21UIApplicationDelegateP", "UINavigationController"]
@@ -434,7 +422,6 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
 - !private ["So20UIFocusItemContainerP", "rootViewController"]
 - !private ["So22UINavigationControllerC", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "FolderViewController"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
 - !private ["So30UIPasteConfigurationSupportingP", "NewNoteViewController"]
@@ -463,7 +450,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "saveContext"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
-- !private ["So11UIResponderC", "FolderViewController"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - !private ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "NSPersistentContainer"]
@@ -494,7 +480,6 @@ depends-member:
 - !private ["So11UIResponderC", "rootViewController"]
 - ["So11UIResponderC", "saveContext"]
 - ["So11UIResponderC", "window"]
-- !private ["So30UIResponderStandardEditActionsP", "FolderViewController"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
 - !private ["So30UIResponderStandardEditActionsP", "NewNoteViewController"]
@@ -524,16 +509,12 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "window"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
-- !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
-- !private ["So21UITableViewDataSourceP", "init"]
-- !private ["So19UITableViewDelegateP", "init"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "main"]
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
-- !private ["So23UIUserActivityRestoringP", "FolderViewController"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "NSPersistentContainer"]
 - !private ["So23UIUserActivityRestoringP", "NewNoteViewController"]
@@ -582,7 +563,6 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FolderViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NewNoteViewController"]
@@ -642,7 +622,6 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "9SplitNote20FolderViewControllerC"
 - "SH"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -680,10 +659,7 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So8UIScreenC"
-- !private "So20UIScrollViewDelegateP"
 - !private "So16UIStateRestoringP"
-- !private "So21UITableViewDataSourceP"
-- !private "So19UITableViewDelegateP"
 - !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"

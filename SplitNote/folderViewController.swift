@@ -22,6 +22,7 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
         view.backgroundColor = .white
         setupNavigationBarItems()
         setupTableView()
+        setupFoldersHeaderView()
         
     }
     
@@ -30,7 +31,12 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
         navigationController?.navigationBar.barTintColor = SplitNoteDarkPurple
         
         navigationItem.title = "Folders"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationItem.rightBarButtonItem = add
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false;
         
     }
     
@@ -45,12 +51,27 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
+    private func setupFoldersHeaderView() {
+        
+        view.addSubview(foldersHeader)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: foldersHeader)
+        view.addConstraintsWithFormat(format: "V:|[v0(50)]", views: foldersHeader)
+        
+    }
+    
     let add: UIBarButtonItem = {
         
         let a = UIBarButtonItem()
         a.title = "ADD"
         a.tintColor = .white
         return a
+        
+    }()
+    
+    let foldersHeader: FoldersHeaderView = {
+        
+        let fH = FoldersHeaderView()
+        return fH
         
     }()
     

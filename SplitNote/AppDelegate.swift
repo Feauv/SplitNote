@@ -21,9 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        UINavigationController(rootViewController: NewNoteViewController())
+        //UINavigationController(rootViewController: NewNoteViewController())
+        //UINavigationController(rootViewController: FolderViewController())
             
-        window?.rootViewController = UINavigationController(rootViewController: FolderViewController())
+        window?.rootViewController = UINavigationController(rootViewController: NewNoteViewController())
         
         return true
     }
