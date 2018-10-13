@@ -1,8 +1,11 @@
 version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
 options: "daa7265bcc861ac756cb47713b065c8c"
-build_time: [1539419829, 224228000]
+build_time: [1539455656, 246128000]
 inputs:
   "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/homeViewController.swift": [1539413218, 0]
-  "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/newNoteViewController.swift": [1539419829, 0]
-  "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/AppDelegate.swift": [1539413218, 0]
+  "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/newNoteViewController.swift": [1539455619, 0]
+  "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/AppDelegate.swift": [1539455619, 0]
   "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/recentsCell.swift": [1539413218, 0]
+  "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/folderViewController.swift": [1539455410, 0]
+  "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/View/foldersHeaderView.swift": [9223372036, 854775807]
+  "/Users/GroverDover/UIowa/TigerHacks18/SplitNote/SplitNote/folderCell.swift": [1539449942, 0]

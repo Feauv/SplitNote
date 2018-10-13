@@ -15,6 +15,10 @@
 		4926E83021718F7A00AFB28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4926E82E21718F7A00AFB28E /* LaunchScreen.storyboard */; };
 		95303F1E2171C2C5003519D3 /* newNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F1D2171C2C5003519D3 /* newNoteViewController.swift */; };
 		95303F202171C2FD003519D3 /* recentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F1F2171C2FD003519D3 /* recentsCell.swift */; };
+		95303F22217259FC003519D3 /* folderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F21217259FC003519D3 /* folderViewController.swift */; };
+		95303F2421725AA1003519D3 /* folderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F2321725AA1003519D3 /* folderCell.swift */; };
+		95303F2B21727226003519D3 /* foldersHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F2A21727226003519D3 /* foldersHeaderView.swift */; };
+		95303F2E217272B7003519D3 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F2D217272B7003519D3 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		4926E83121718F7A00AFB28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95303F1D2171C2C5003519D3 /* newNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newNoteViewController.swift; sourceTree = "<group>"; };
 		95303F1F2171C2FD003519D3 /* recentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = recentsCell.swift; path = SplitNote/recentsCell.swift; sourceTree = SOURCE_ROOT; };
+		95303F21217259FC003519D3 /* folderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = folderViewController.swift; sourceTree = "<group>"; };
+		95303F2321725AA1003519D3 /* folderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = folderCell.swift; path = SplitNote/folderCell.swift; sourceTree = SOURCE_ROOT; };
+		95303F2A21727226003519D3 /* foldersHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foldersHeaderView.swift; sourceTree = "<group>"; };
+		95303F2D217272B7003519D3 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +71,10 @@
 				4926E82221718F7800AFB28E /* AppDelegate.swift */,
 				4926E82421718F7800AFB28E /* homeViewController.swift */,
 				95303F1D2171C2C5003519D3 /* newNoteViewController.swift */,
+				95303F21217259FC003519D3 /* folderViewController.swift */,
 				4926E8372171914F00AFB28E /* Model */,
 				4926E8382171916400AFB28E /* View */,
+				95303F2C21727284003519D3 /* Helpers */,
 				4926E82621718F7800AFB28E /* Main.storyboard */,
 				4926E82C21718F7A00AFB28E /* Assets.xcassets */,
 				4926E82E21718F7A00AFB28E /* LaunchScreen.storyboard */,
@@ -85,8 +95,18 @@
 			isa = PBXGroup;
 			children = (
 				95303F1F2171C2FD003519D3 /* recentsCell.swift */,
+				95303F2321725AA1003519D3 /* folderCell.swift */,
+				95303F2A21727226003519D3 /* foldersHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		95303F2C21727284003519D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95303F2D217272B7003519D3 /* extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +184,10 @@
 				95303F1E2171C2C5003519D3 /* newNoteViewController.swift in Sources */,
 				4926E82321718F7800AFB28E /* AppDelegate.swift in Sources */,
 				95303F202171C2FD003519D3 /* recentsCell.swift in Sources */,
+				95303F22217259FC003519D3 /* folderViewController.swift in Sources */,
+				95303F2E217272B7003519D3 /* extensions.swift in Sources */,
+				95303F2B21727226003519D3 /* foldersHeaderView.swift in Sources */,
+				95303F2421725AA1003519D3 /* folderCell.swift in Sources */,
 				4926E82B21718F7800AFB28E /* SplitNote.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
