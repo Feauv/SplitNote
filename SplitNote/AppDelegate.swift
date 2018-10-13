@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
     
-        window?.rootViewController = homeViewController()
+        window?.rootViewController = NewNoteViewController()
         
         return true
     }

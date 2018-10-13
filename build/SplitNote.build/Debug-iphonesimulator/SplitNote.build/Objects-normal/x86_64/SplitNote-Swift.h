@@ -197,7 +197,25 @@ SWIFT_CLASS("_TtC9SplitNote11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class UIButton;
+@class UIView;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC9SplitNote21NewNoteViewController")
+@interface NewNoteViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified transcription;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified flagLabel;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified enterFlagText;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified newNoteView;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified divider;
+- (void)viewDidLoad;
+- (IBAction)enterText:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC9SplitNote11RecentsCell")
 @interface RecentsCell : UITableViewCell
@@ -205,11 +223,7 @@ SWIFT_CLASS("_TtC9SplitNote11RecentsCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-@class UIButton;
 @class UITableView;
-@class UIView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC9SplitNote18homeViewController")
 @interface homeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>

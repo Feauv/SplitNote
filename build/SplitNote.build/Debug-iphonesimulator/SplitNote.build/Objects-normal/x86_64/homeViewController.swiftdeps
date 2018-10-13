@@ -1,13 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "homeViewController"
-- "RecentsCell"
 provides-nominal:
 - "9SplitNote18homeViewControllerC"
-- "9SplitNote11RecentsCellC"
 provides-member:
 - ["9SplitNote18homeViewControllerC", ""]
-- ["9SplitNote11RecentsCellC", ""]
 provides-dynamic-lookup:
 - "homeView"
 - "new"
@@ -33,10 +30,8 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - "IntegerLiteralType"
-- "NSCoder"
 - !private "NSTextAlignment"
-- "RecentsCell"
-- "String"
+- !private "RecentsCell"
 - "StringLiteralType"
 - "UIButton"
 - !private "UIColor"
@@ -48,7 +43,6 @@ depends-top-level:
 - "UITableViewDelegate"
 - "UIView"
 - "UIViewController"
-- !private "fatalError"
 - "homeViewController"
 - !private "print"
 depends-member:
@@ -69,17 +63,13 @@ depends-member:
 - !private ["So7CALayerC", "insertSublayer"]
 - !private ["So7CALayerC", "locations"]
 - !private ["So7CALayerC", "startPoint"]
-- ["So15CALayerDelegateP", "CellStyle"]
-- ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "addSubview"]
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "bounds"]
-- !private ["So15CALayerDelegateP", "contentView"]
 - !private ["So15CALayerDelegateP", "dataSource"]
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
-- !private ["So15CALayerDelegateP", "fatalError"]
 - !private ["So15CALayerDelegateP", "font"]
 - !private ["So15CALayerDelegateP", "frame"]
 - !private ["So15CALayerDelegateP", "init"]
@@ -106,7 +96,6 @@ depends-member:
 - !private ["s7CVarArgP", "CAGradientLayer"]
 - !private ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "CGRect"]
-- ["s7CVarArgP", "CellStyle"]
 - !private ["s7CVarArgP", "NSTextAlignment"]
 - !private ["s7CVarArgP", "RecentsCell"]
 - !private ["s7CVarArgP", "UIButton"]
@@ -123,13 +112,11 @@ depends-member:
 - !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "cgColor"]
 - !private ["s7CVarArgP", "colors"]
-- !private ["s7CVarArgP", "contentView"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
 - !private ["s7CVarArgP", "endPoint"]
-- !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "font"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "gradient"]
@@ -188,7 +175,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "CAGradientLayer"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
-- ["s28CustomDebugStringConvertibleP", "CellStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "NSTextAlignment"]
 - !private ["s28CustomDebugStringConvertibleP", "RecentsCell"]
 - !private ["s28CustomDebugStringConvertibleP", "UIButton"]
@@ -204,13 +190,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
 - !private ["s28CustomDebugStringConvertibleP", "colors"]
-- !private ["s28CustomDebugStringConvertibleP", "contentView"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "endPoint"]
-- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "font"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "gradient"]
@@ -289,12 +273,10 @@ depends-member:
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s17CustomReflectableP", "textAlignment"]
 - !private ["s17CustomReflectableP", "textColor"]
-- !private ["s17CustomReflectableP", "white"]
 - !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "CAGradientLayer"]
 - !private ["s23CustomStringConvertibleP", "CGPoint"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
-- ["s23CustomStringConvertibleP", "CellStyle"]
 - !private ["s23CustomStringConvertibleP", "NSTextAlignment"]
 - !private ["s23CustomStringConvertibleP", "RecentsCell"]
 - !private ["s23CustomStringConvertibleP", "UIButton"]
@@ -311,13 +293,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "bounds"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
 - !private ["s23CustomStringConvertibleP", "colors"]
-- !private ["s23CustomStringConvertibleP", "contentView"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "endPoint"]
-- !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "font"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "gradient"]
@@ -389,7 +369,6 @@ depends-member:
 - !private ["Se", "text"]
 - !private ["Se", "textAlignment"]
 - !private ["Se", "textColor"]
-- !private ["Se", "white"]
 - !private ["Se", "width"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "addSubview"]
@@ -411,12 +390,10 @@ depends-member:
 - !private ["SE", "text"]
 - !private ["SE", "textAlignment"]
 - !private ["SE", "textColor"]
-- !private ["SE", "white"]
 - !private ["SE", "width"]
 - !private ["SQ", "CAGradientLayer"]
 - !private ["SQ", "CGPoint"]
 - !private ["SQ", "CGRect"]
-- ["SQ", "CellStyle"]
 - !private ["SQ", "NSTextAlignment"]
 - !private ["SQ", "RecentsCell"]
 - !private ["SQ", "UIButton"]
@@ -434,13 +411,11 @@ depends-member:
 - !private ["SQ", "center"]
 - !private ["SQ", "cgColor"]
 - !private ["SQ", "colors"]
-- !private ["SQ", "contentView"]
 - !private ["SQ", "cornerRadius"]
 - !private ["SQ", "dataSource"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "endPoint"]
-- !private ["SQ", "fatalError"]
 - !private ["SQ", "font"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "gradient"]
@@ -516,7 +491,6 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s23ExpressibleByNilLiteralP", "textAlignment"]
 - !private ["s23ExpressibleByNilLiteralP", "textColor"]
-- !private ["s23ExpressibleByNilLiteralP", "white"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -524,7 +498,6 @@ depends-member:
 - !private ["SH", "CAGradientLayer"]
 - !private ["SH", "CGPoint"]
 - !private ["SH", "CGRect"]
-- ["SH", "CellStyle"]
 - !private ["SH", "NSTextAlignment"]
 - !private ["SH", "RecentsCell"]
 - !private ["SH", "UIButton"]
@@ -542,13 +515,11 @@ depends-member:
 - !private ["SH", "center"]
 - !private ["SH", "cgColor"]
 - !private ["SH", "colors"]
-- !private ["SH", "contentView"]
 - !private ["SH", "cornerRadius"]
 - !private ["SH", "dataSource"]
 - !private ["SH", "delegate"]
 - !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "endPoint"]
-- !private ["SH", "fatalError"]
 - !private ["SH", "font"]
 - !private ["SH", "frame"]
 - !private ["SH", "gradient"]
@@ -608,7 +579,6 @@ depends-member:
 - !private ["So8NSCodingP", "CAGradientLayer"]
 - !private ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "CGRect"]
-- ["So8NSCodingP", "CellStyle"]
 - !private ["So8NSCodingP", "NSTextAlignment"]
 - !private ["So8NSCodingP", "RecentsCell"]
 - !private ["So8NSCodingP", "UIButton"]
@@ -624,13 +594,11 @@ depends-member:
 - !private ["So8NSCodingP", "bounds"]
 - !private ["So8NSCodingP", "cgColor"]
 - !private ["So8NSCodingP", "colors"]
-- !private ["So8NSCodingP", "contentView"]
 - !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "dataSource"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "endPoint"]
-- !private ["So8NSCodingP", "fatalError"]
 - !private ["So8NSCodingP", "font"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "gradient"]
@@ -744,13 +712,10 @@ depends-member:
 - ["So8NSObjectC", "CAGradientLayer"]
 - !private ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "CGRect"]
-- ["So8NSObjectC", "CellStyle"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
-- ["So8NSObjectC", "NSCoder"]
 - !private ["So8NSObjectC", "NSTextAlignment"]
 - !private ["So8NSObjectC", "RecentsCell"]
-- ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UIFont"]
@@ -765,13 +730,11 @@ depends-member:
 - ["So8NSObjectC", "cellId"]
 - !private ["So8NSObjectC", "cgColor"]
 - !private ["So8NSObjectC", "colors"]
-- !private ["So8NSObjectC", "contentView"]
 - !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "endPoint"]
-- !private ["So8NSObjectC", "fatalError"]
 - !private ["So8NSObjectC", "font"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "gradient"]
@@ -827,7 +790,6 @@ depends-member:
 - !private ["So8NSObjectP", "CAGradientLayer"]
 - !private ["So8NSObjectP", "CGPoint"]
 - !private ["So8NSObjectP", "CGRect"]
-- ["So8NSObjectP", "CellStyle"]
 - !private ["So8NSObjectP", "NSTextAlignment"]
 - !private ["So8NSObjectP", "RecentsCell"]
 - !private ["So8NSObjectP", "UIButton"]
@@ -843,13 +805,11 @@ depends-member:
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "cgColor"]
 - !private ["So8NSObjectP", "colors"]
-- !private ["So8NSObjectP", "contentView"]
 - !private ["So8NSObjectP", "cornerRadius"]
 - !private ["So8NSObjectP", "dataSource"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
 - !private ["So8NSObjectP", "endPoint"]
-- !private ["So8NSObjectP", "fatalError"]
 - !private ["So8NSObjectP", "font"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "gradient"]
@@ -929,22 +889,13 @@ depends-member:
 - !private ["Sq", "text"]
 - !private ["Sq", "textAlignment"]
 - !private ["Sq", "textColor"]
-- !private ["Sq", "white"]
 - ["Sm", "init"]
 - ["Sm", "init"]
 - !private ["SY", "center"]
 - !private ["SY", "touchUpInside"]
-- ["9SplitNote11RecentsCellC", "NSCoder"]
-- ["9SplitNote11RecentsCellC", "String"]
-- ["9SplitNote11RecentsCellC", "UITableViewCell"]
-- !private ["9SplitNote11RecentsCellC", "contentView"]
-- !private ["9SplitNote11RecentsCellC", "fatalError"]
-- ["9SplitNote11RecentsCellC", "init"]
 - ["ST", "init"]
 - ["ST", "init"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
-- !private ["s12StaticStringV", "init"]
-- !private ["s12StaticStringV", "init"]
 - ["SS", "init"]
 - ["SS", "init"]
 - ["Sy", "init"]
@@ -959,17 +910,13 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "layer"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitle"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitleColor"]
-- ["So29UIAccessibilityIdentificationP", "CellStyle"]
-- ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "addTarget"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
-- !private ["So29UIAccessibilityIdentificationP", "contentView"]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
-- !private ["So29UIAccessibilityIdentificationP", "fatalError"]
 - !private ["So29UIAccessibilityIdentificationP", "font"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
@@ -981,17 +928,13 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textAlignment"]
 - !private ["So29UIAccessibilityIdentificationP", "textColor"]
-- ["So12UIAppearanceP", "CellStyle"]
-- ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "addSubview"]
 - !private ["So12UIAppearanceP", "addTarget"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "bounds"]
-- !private ["So12UIAppearanceP", "contentView"]
 - !private ["So12UIAppearanceP", "dataSource"]
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
-- !private ["So12UIAppearanceP", "fatalError"]
 - !private ["So12UIAppearanceP", "font"]
 - !private ["So12UIAppearanceP", "frame"]
 - !private ["So12UIAppearanceP", "init"]
@@ -1006,7 +949,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "CAGradientLayer"]
 - !private ["So21UIAppearanceContainerP", "CGPoint"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
-- ["So21UIAppearanceContainerP", "CellStyle"]
 - !private ["So21UIAppearanceContainerP", "NSTextAlignment"]
 - !private ["So21UIAppearanceContainerP", "RecentsCell"]
 - !private ["So21UIAppearanceContainerP", "UIButton"]
@@ -1020,11 +962,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "bounds"]
-- !private ["So21UIAppearanceContainerP", "contentView"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
-- !private ["So21UIAppearanceContainerP", "fatalError"]
 - !private ["So21UIAppearanceContainerP", "font"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "gradient"]
@@ -1141,17 +1081,13 @@ depends-member:
 - !private ["So9UIControlC", "layer"]
 - !private ["So9UIControlC", "setTitle"]
 - !private ["So9UIControlC", "setTitleColor"]
-- ["So17UICoordinateSpaceP", "CellStyle"]
-- ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
 - !private ["So17UICoordinateSpaceP", "addTarget"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
-- !private ["So17UICoordinateSpaceP", "contentView"]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
-- !private ["So17UICoordinateSpaceP", "fatalError"]
 - !private ["So17UICoordinateSpaceP", "font"]
 - !private ["So17UICoordinateSpaceP", "frame"]
 - !private ["So17UICoordinateSpaceP", "init"]
@@ -1170,17 +1106,13 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "layer"]
 - !private ["So23UIDataSourceTranslatingP", "register"]
 - !private ["So23UIDataSourceTranslatingP", "rowHeight"]
-- ["So13UIDynamicItemP", "CellStyle"]
-- ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "addSubview"]
 - !private ["So13UIDynamicItemP", "addTarget"]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "bounds"]
-- !private ["So13UIDynamicItemP", "contentView"]
 - !private ["So13UIDynamicItemP", "dataSource"]
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
-- !private ["So13UIDynamicItemP", "fatalError"]
 - !private ["So13UIDynamicItemP", "font"]
 - !private ["So13UIDynamicItemP", "frame"]
 - !private ["So13UIDynamicItemP", "init"]
@@ -1195,7 +1127,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "CAGradientLayer"]
 - !private ["So18UIFocusEnvironmentP", "CGPoint"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
-- ["So18UIFocusEnvironmentP", "CellStyle"]
 - !private ["So18UIFocusEnvironmentP", "NSTextAlignment"]
 - !private ["So18UIFocusEnvironmentP", "RecentsCell"]
 - !private ["So18UIFocusEnvironmentP", "UIButton"]
@@ -1209,11 +1140,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
-- !private ["So18UIFocusEnvironmentP", "contentView"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UIFocusEnvironmentP", "fatalError"]
 - !private ["So18UIFocusEnvironmentP", "font"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "gradient"]
@@ -1261,17 +1190,13 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
-- ["So11UIFocusItemP", "CellStyle"]
-- ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "bounds"]
-- !private ["So11UIFocusItemP", "contentView"]
 - !private ["So11UIFocusItemP", "dataSource"]
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
-- !private ["So11UIFocusItemP", "fatalError"]
 - !private ["So11UIFocusItemP", "font"]
 - !private ["So11UIFocusItemP", "frame"]
 - !private ["So11UIFocusItemP", "init"]
@@ -1283,17 +1208,13 @@ depends-member:
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "textAlignment"]
 - !private ["So11UIFocusItemP", "textColor"]
-- ["So20UIFocusItemContainerP", "CellStyle"]
-- ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "addSubview"]
 - !private ["So20UIFocusItemContainerP", "addTarget"]
 - !private ["So20UIFocusItemContainerP", "backgroundColor"]
 - !private ["So20UIFocusItemContainerP", "bounds"]
-- !private ["So20UIFocusItemContainerP", "contentView"]
 - !private ["So20UIFocusItemContainerP", "dataSource"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
-- !private ["So20UIFocusItemContainerP", "fatalError"]
 - !private ["So20UIFocusItemContainerP", "font"]
 - !private ["So20UIFocusItemContainerP", "frame"]
 - !private ["So20UIFocusItemContainerP", "init"]
@@ -1314,11 +1235,6 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "rowHeight"]
 - !private ["So6UIFontC", "init"]
 - !private ["So6UIFontC", "init"]
-- ["So27UIGestureRecognizerDelegateP", "CellStyle"]
-- ["So27UIGestureRecognizerDelegateP", ""]
-- !private ["So27UIGestureRecognizerDelegateP", "contentView"]
-- !private ["So27UIGestureRecognizerDelegateP", "fatalError"]
-- !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So7UILabelC", "font"]
 - !private ["So7UILabelC", "init"]
 - !private ["So7UILabelC", "text"]
@@ -1327,7 +1243,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "CAGradientLayer"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
-- ["So30UIPasteConfigurationSupportingP", "CellStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSTextAlignment"]
 - !private ["So30UIPasteConfigurationSupportingP", "RecentsCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIButton"]
@@ -1341,11 +1256,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
-- !private ["So30UIPasteConfigurationSupportingP", "contentView"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
-- !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
 - !private ["So30UIPasteConfigurationSupportingP", "font"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "gradient"]
@@ -1396,13 +1309,10 @@ depends-member:
 - ["So11UIResponderC", "CAGradientLayer"]
 - !private ["So11UIResponderC", "CGPoint"]
 - !private ["So11UIResponderC", "CGRect"]
-- ["So11UIResponderC", "CellStyle"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
-- ["So11UIResponderC", "NSCoder"]
 - !private ["So11UIResponderC", "NSTextAlignment"]
 - !private ["So11UIResponderC", "RecentsCell"]
-- ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UIFont"]
@@ -1415,11 +1325,9 @@ depends-member:
 - !private ["So11UIResponderC", "backgroundColor"]
 - !private ["So11UIResponderC", "bounds"]
 - ["So11UIResponderC", "cellId"]
-- !private ["So11UIResponderC", "contentView"]
 - !private ["So11UIResponderC", "dataSource"]
 - !private ["So11UIResponderC", "delegate"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
-- !private ["So11UIResponderC", "fatalError"]
 - !private ["So11UIResponderC", "font"]
 - !private ["So11UIResponderC", "frame"]
 - ["So11UIResponderC", "gradient"]
@@ -1471,7 +1379,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "CAGradientLayer"]
 - !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
-- ["So30UIResponderStandardEditActionsP", "CellStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "NSTextAlignment"]
 - !private ["So30UIResponderStandardEditActionsP", "RecentsCell"]
 - !private ["So30UIResponderStandardEditActionsP", "UIButton"]
@@ -1485,11 +1392,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
-- !private ["So30UIResponderStandardEditActionsP", "contentView"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
-- !private ["So30UIResponderStandardEditActionsP", "fatalError"]
 - !private ["So30UIResponderStandardEditActionsP", "font"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "gradient"]
@@ -1657,14 +1562,6 @@ depends-member:
 - !private ["So11UITableViewC", "layer"]
 - !private ["So11UITableViewC", "register"]
 - !private ["So11UITableViewC", "rowHeight"]
-- ["So15UITableViewCellC", "CellStyle"]
-- ["So15UITableViewCellC", "NSCoder"]
-- ["So15UITableViewCellC", "String"]
-- ["So15UITableViewCellC", "UITableViewCell"]
-- ["So15UITableViewCellC", ""]
-- !private ["So15UITableViewCellC", "contentView"]
-- !private ["So15UITableViewCellC", "fatalError"]
-- ["So15UITableViewCellC", "init"]
 - !private ["So21UITableViewDataSourceP", "CAGradientLayer"]
 - !private ["So21UITableViewDataSourceP", "CGPoint"]
 - !private ["So21UITableViewDataSourceP", "CGRect"]
@@ -1760,7 +1657,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "CAGradientLayer"]
 - !private ["So18UITraitEnvironmentP", "CGPoint"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
-- ["So18UITraitEnvironmentP", "CellStyle"]
 - !private ["So18UITraitEnvironmentP", "NSTextAlignment"]
 - !private ["So18UITraitEnvironmentP", "RecentsCell"]
 - !private ["So18UITraitEnvironmentP", "UIButton"]
@@ -1774,11 +1670,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
-- !private ["So18UITraitEnvironmentP", "contentView"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UITraitEnvironmentP", "fatalError"]
 - !private ["So18UITraitEnvironmentP", "font"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "gradient"]
@@ -1829,7 +1723,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "CAGradientLayer"]
 - !private ["So23UIUserActivityRestoringP", "CGPoint"]
 - !private ["So23UIUserActivityRestoringP", "CGRect"]
-- ["So23UIUserActivityRestoringP", "CellStyle"]
 - !private ["So23UIUserActivityRestoringP", "NSTextAlignment"]
 - !private ["So23UIUserActivityRestoringP", "RecentsCell"]
 - !private ["So23UIUserActivityRestoringP", "UIButton"]
@@ -1843,11 +1736,9 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "addTarget"]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
 - !private ["So23UIUserActivityRestoringP", "bounds"]
-- !private ["So23UIUserActivityRestoringP", "contentView"]
 - !private ["So23UIUserActivityRestoringP", "dataSource"]
 - !private ["So23UIUserActivityRestoringP", "delegate"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
-- !private ["So23UIUserActivityRestoringP", "fatalError"]
 - !private ["So23UIUserActivityRestoringP", "font"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["So23UIUserActivityRestoringP", "gradient"]
@@ -1895,22 +1786,16 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - ["So23UIUserActivityRestoringP", "viewForZooming"]
 - ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
-- ["So6UIViewC", "CellStyle"]
-- ["So6UIViewC", "NSCoder"]
-- ["So6UIViewC", "String"]
-- ["So6UIViewC", "UITableViewCell"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "addTarget"]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "bounds"]
-- !private ["So6UIViewC", "contentView"]
 - !private ["So6UIViewC", "dataSource"]
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
-- !private ["So6UIViewC", "fatalError"]
 - !private ["So6UIViewC", "font"]
 - !private ["So6UIViewC", "frame"]
-- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "layer"]
 - !private ["So6UIViewC", "register"]
 - !private ["So6UIViewC", "rowHeight"]
@@ -1973,17 +1858,13 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", "CellStyle"]
-- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dataSource"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "fatalError"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "font"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
@@ -2012,7 +1893,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CAGradientLayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "CellStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSTextAlignment"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "RecentsCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
@@ -2028,13 +1908,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "colors"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endPoint"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "font"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "gradient"]
@@ -2106,7 +1984,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s21_ObjectiveCBridgeableP", "textAlignment"]
 - !private ["s21_ObjectiveCBridgeableP", "textColor"]
-- !private ["s21_ObjectiveCBridgeableP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
@@ -2168,7 +2045,7 @@ depends-nominal:
 - !private "Sb"
 - !private "So15CAGradientLayerC"
 - !private "So7CALayerC"
-- "So15CALayerDelegateP"
+- !private "So15CALayerDelegateP"
 - !private "So13CAMediaTimingP"
 - !private "So7CGPointV"
 - !private "So6CGRectV"
@@ -2205,32 +2082,29 @@ depends-nominal:
 - !private "Sq"
 - "Sm"
 - !private "SY"
-- "9SplitNote11RecentsCellC"
 - "ST"
 - !private "s10SetAlgebraP"
-- !private "s12StaticStringV"
 - "SS"
 - "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
-- "So29UIAccessibilityIdentificationP"
-- "So12UIAppearanceP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - !private "So8UIButtonC"
 - !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"
-- "So17UICoordinateSpaceP"
+- !private "So17UICoordinateSpaceP"
 - !private "So23UIDataSourceTranslatingP"
-- "So13UIDynamicItemP"
+- !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
-- "So11UIFocusItemP"
-- "So20UIFocusItemContainerP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
 - !private "So6UIFontC"
-- "So27UIGestureRecognizerDelegateP"
 - !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -2240,14 +2114,13 @@ depends-nominal:
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - !private "So11UITableViewC"
-- "So15UITableViewCellC"
 - "So21UITableViewDataSourceP"
 - "So19UITableViewDelegateP"
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
-- "So6UIViewC"
+- !private "So6UIViewC"
 - "So16UIViewControllerC"
-- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
@@ -2287,4 +2160,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "460470917afce317d2071ccca64b5b03"
+interface-hash: "32673acf95d2cb5955e63a0d34697041"
