@@ -23,22 +23,19 @@ depends-top-level:
 - "IntegerLiteralType"
 - !private "NSError"
 - "NSPersistentContainer"
-- !private "NewNoteViewController"
 - "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
-- !private "UINavigationController"
 - "UIResponder"
 - !private "UIScreen"
 - "UIWindow"
 - !private "fatalError"
+- !private "homeViewController"
 depends-member:
 - ["9SplitNote11AppDelegateC", "Bool"]
 - !private ["9SplitNote11AppDelegateC", "NSError"]
 - ["9SplitNote11AppDelegateC", "NSPersistentContainer"]
-- !private ["9SplitNote11AppDelegateC", "NewNoteViewController"]
 - ["9SplitNote11AppDelegateC", "UIApplication"]
-- !private ["9SplitNote11AppDelegateC", "UINavigationController"]
 - !private ["9SplitNote11AppDelegateC", "UIScreen"]
 - ["9SplitNote11AppDelegateC", "UIWindow"]
 - ["9SplitNote11AppDelegateC", "application"]
@@ -55,6 +52,7 @@ depends-member:
 - ["9SplitNote11AppDelegateC", "applicationWillTerminate"]
 - ["9SplitNote11AppDelegateC", "deinit"]
 - !private ["9SplitNote11AppDelegateC", "fatalError"]
+- !private ["9SplitNote11AppDelegateC", "homeViewController"]
 - ["9SplitNote11AppDelegateC", "init"]
 - ["9SplitNote11AppDelegateC", "persistentContainer"]
 - !private ["9SplitNote11AppDelegateC", "persistentContainer.storage"]
@@ -68,8 +66,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - !private ["s7CVarArgP", "NSPersistentContainer"]
-- !private ["s7CVarArgP", "NewNoteViewController"]
-- !private ["s7CVarArgP", "UINavigationController"]
 - !private ["s7CVarArgP", "UIScreen"]
 - !private ["s7CVarArgP", "UIWindow"]
 - ["s7CVarArgP", ""]
@@ -89,6 +85,7 @@ depends-member:
 - !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "hasChanges"]
+- !private ["s7CVarArgP", "homeViewController"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "loadPersistentStores"]
@@ -107,8 +104,6 @@ depends-member:
 - !private ["SL", "init"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
-- !private ["s28CustomDebugStringConvertibleP", "NewNoteViewController"]
-- !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -127,6 +122,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "hasChanges"]
+- !private ["s28CustomDebugStringConvertibleP", "homeViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "loadPersistentStores"]
@@ -147,8 +143,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
-- !private ["s23CustomStringConvertibleP", "NewNoteViewController"]
-- !private ["s23CustomStringConvertibleP", "UINavigationController"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - ["s23CustomStringConvertibleP", ""]
@@ -168,6 +162,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "bounds"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "hasChanges"]
+- !private ["s23CustomStringConvertibleP", "homeViewController"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "loadPersistentStores"]
@@ -188,8 +183,6 @@ depends-member:
 - !private ["SE", "init"]
 - ["SQ", "LaunchOptionsKey"]
 - !private ["SQ", "NSPersistentContainer"]
-- !private ["SQ", "NewNoteViewController"]
-- !private ["SQ", "UINavigationController"]
 - !private ["SQ", "UIScreen"]
 - !private ["SQ", "UIWindow"]
 - ["SQ", ""]
@@ -209,6 +202,7 @@ depends-member:
 - !private ["SQ", "bounds"]
 - !private ["SQ", "fatalError"]
 - !private ["SQ", "hasChanges"]
+- !private ["SQ", "homeViewController"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "loadPersistentStores"]
@@ -231,8 +225,6 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["SH", "LaunchOptionsKey"]
 - !private ["SH", "NSPersistentContainer"]
-- !private ["SH", "NewNoteViewController"]
-- !private ["SH", "UINavigationController"]
 - !private ["SH", "UIScreen"]
 - !private ["SH", "UIWindow"]
 - ["SH", ""]
@@ -252,6 +244,7 @@ depends-member:
 - !private ["SH", "bounds"]
 - !private ["SH", "fatalError"]
 - !private ["SH", "hasChanges"]
+- !private ["SH", "homeViewController"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "loadPersistentStores"]
@@ -286,9 +279,7 @@ depends-member:
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - !private ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "NSPersistentContainer"]
-- !private ["So8NSObjectC", "NewNoteViewController"]
 - ["So8NSObjectC", "UIApplication"]
-- !private ["So8NSObjectC", "UINavigationController"]
 - !private ["So8NSObjectC", "UIScreen"]
 - ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", "application"]
@@ -306,6 +297,7 @@ depends-member:
 - !private ["So8NSObjectC", "bounds"]
 - !private ["So8NSObjectC", "fatalError"]
 - !private ["So8NSObjectC", "hasChanges"]
+- !private ["So8NSObjectC", "homeViewController"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "loadPersistentStores"]
@@ -321,8 +313,6 @@ depends-member:
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - !private ["So8NSObjectP", "NSPersistentContainer"]
-- !private ["So8NSObjectP", "NewNoteViewController"]
-- !private ["So8NSObjectP", "UINavigationController"]
 - !private ["So8NSObjectP", "UIScreen"]
 - !private ["So8NSObjectP", "UIWindow"]
 - ["So8NSObjectP", ""]
@@ -341,6 +331,7 @@ depends-member:
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "fatalError"]
 - !private ["So8NSObjectP", "hasChanges"]
+- !private ["So8NSObjectP", "homeViewController"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "loadPersistentStores"]
@@ -357,8 +348,6 @@ depends-member:
 - !private ["So21NSPersistentContainerC", "loadPersistentStores"]
 - !private ["So21NSPersistentContainerC", "viewContext"]
 - !private ["So14NSSecureCodingP", "userInfo"]
-- !private ["9SplitNote03NewB14ViewControllerC", "deinit"]
-- !private ["9SplitNote03NewB14ViewControllerC", "init"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["ST", "init"]
@@ -384,8 +373,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
 - !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
-- !private ["So21UIApplicationDelegateP", "NewNoteViewController"]
-- !private ["So21UIApplicationDelegateP", "UINavigationController"]
 - !private ["So21UIApplicationDelegateP", "UIScreen"]
 - !private ["So21UIApplicationDelegateP", "UIWindow"]
 - ["So21UIApplicationDelegateP", ""]
@@ -402,6 +389,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - !private ["So21UIApplicationDelegateP", "fatalError"]
+- !private ["So21UIApplicationDelegateP", "homeViewController"]
 - !private ["So21UIApplicationDelegateP", "persistentContainer"]
 - !private ["So21UIApplicationDelegateP", "saveContext"]
 - ["So21UIApplicationDelegateP", "window"]
@@ -421,11 +409,8 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
 - !private ["So20UIFocusItemContainerP", "rootViewController"]
-- !private ["So22UINavigationControllerC", "init"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
-- !private ["So30UIPasteConfigurationSupportingP", "NewNoteViewController"]
-- !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -442,6 +427,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
+- !private ["So30UIPasteConfigurationSupportingP", "homeViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
@@ -453,9 +439,7 @@ depends-member:
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - !private ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "NSPersistentContainer"]
-- !private ["So11UIResponderC", "NewNoteViewController"]
 - ["So11UIResponderC", "UIApplication"]
-- !private ["So11UIResponderC", "UINavigationController"]
 - !private ["So11UIResponderC", "UIScreen"]
 - ["So11UIResponderC", "UIWindow"]
 - ["So11UIResponderC", ""]
@@ -472,6 +456,7 @@ depends-member:
 - ["So11UIResponderC", "applicationWillResignActive"]
 - ["So11UIResponderC", "applicationWillTerminate"]
 - !private ["So11UIResponderC", "fatalError"]
+- !private ["So11UIResponderC", "homeViewController"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
@@ -482,8 +467,6 @@ depends-member:
 - ["So11UIResponderC", "window"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
-- !private ["So30UIResponderStandardEditActionsP", "NewNoteViewController"]
-- !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -500,6 +483,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
+- !private ["So30UIResponderStandardEditActionsP", "homeViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
@@ -509,7 +493,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "window"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
+- !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So19UITableViewDelegateP", "init"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "main"]
@@ -517,8 +504,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "NSPersistentContainer"]
-- !private ["So23UIUserActivityRestoringP", "NewNoteViewController"]
-- !private ["So23UIUserActivityRestoringP", "UINavigationController"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -535,6 +520,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "homeViewController"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
@@ -565,8 +551,6 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "NewNoteViewController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -585,6 +569,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasChanges"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "homeViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loadPersistentStores"]
@@ -602,6 +587,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
+- !private ["9SplitNote18homeViewControllerC", "deinit"]
+- !private ["9SplitNote18homeViewControllerC", "init"]
 depends-nominal:
 - "9SplitNote11AppDelegateC"
 - !private "SK"
@@ -635,7 +622,6 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So21NSPersistentContainerC"
 - !private "So14NSSecureCodingP"
-- !private "9SplitNote03NewB14ViewControllerC"
 - !private "Sm"
 - !private "ST"
 - !private "s12StaticStringV"
@@ -654,12 +640,14 @@ depends-nominal:
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
-- !private "So22UINavigationControllerC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So8UIScreenC"
+- !private "So20UIScrollViewDelegateP"
 - !private "So16UIStateRestoringP"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
 - !private "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
@@ -675,6 +663,7 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
+- !private "9SplitNote18homeViewControllerC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"

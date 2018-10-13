@@ -14,29 +14,36 @@ provides-dynamic-lookup:
 - "applicationWillTerminate"
 - "window"
 depends-top-level:
+- !private "+"
 - "AppDelegate"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "CastingPrecedence"
-- "FloatLiteralType"
-- "IntegerLiteralType"
+- !private "DispatchQueue"
+- !private "DispatchTime"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - !private "NSError"
 - "NSPersistentContainer"
-- "StringLiteralType"
+- !private "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIResponder"
 - !private "UIScreen"
+- !private "UIStoryboard"
 - "UIWindow"
 - !private "fatalError"
 - !private "homeViewController"
 depends-member:
 - ["9SplitNote11AppDelegateC", "Bool"]
+- !private ["9SplitNote11AppDelegateC", "DispatchQueue"]
+- !private ["9SplitNote11AppDelegateC", "DispatchTime"]
 - !private ["9SplitNote11AppDelegateC", "NSError"]
 - ["9SplitNote11AppDelegateC", "NSPersistentContainer"]
 - ["9SplitNote11AppDelegateC", "UIApplication"]
 - !private ["9SplitNote11AppDelegateC", "UIScreen"]
+- !private ["9SplitNote11AppDelegateC", "UIStoryboard"]
 - ["9SplitNote11AppDelegateC", "UIWindow"]
 - ["9SplitNote11AppDelegateC", "application"]
 - ["9SplitNote11AppDelegateC", "applicationDidBecomeActive"]
@@ -64,9 +71,12 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["s7CVarArgP", "DispatchQueue"]
+- !private ["s7CVarArgP", "DispatchTime"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - !private ["s7CVarArgP", "NSPersistentContainer"]
 - !private ["s7CVarArgP", "UIScreen"]
+- !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UIWindow"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
@@ -82,12 +92,14 @@ depends-member:
 - ["s7CVarArgP", "applicationWillEnterForeground"]
 - ["s7CVarArgP", "applicationWillResignActive"]
 - ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "asyncAfter"]
 - !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "hasChanges"]
 - !private ["s7CVarArgP", "homeViewController"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateInitialViewController"]
 - !private ["s7CVarArgP", "loadPersistentStores"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "makeKeyAndVisible"]
@@ -102,9 +114,13 @@ depends-member:
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["SL", "init"]
+- !private ["SL", "now"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchTime"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
+- !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "application"]
@@ -119,12 +135,14 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "asyncAfter"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "hasChanges"]
 - !private ["s28CustomDebugStringConvertibleP", "homeViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "loadPersistentStores"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
@@ -141,9 +159,12 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- !private ["s23CustomStringConvertibleP", "DispatchTime"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
+- !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
@@ -159,12 +180,14 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "asyncAfter"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "hasChanges"]
 - !private ["s23CustomStringConvertibleP", "homeViewController"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s23CustomStringConvertibleP", "loadPersistentStores"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
@@ -178,12 +201,20 @@ depends-member:
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "init"]
 - !private ["Se", "init"]
+- !private ["So18OS_dispatch_objectC", "asyncAfter"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "asyncAfter"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["8Dispatch0A4TimeV", "now"]
 - !private ["SE", "_getBuiltinLogicValue"]
 - !private ["SE", "init"]
 - !private ["SE", "init"]
+- !private ["SQ", "DispatchQueue"]
+- !private ["SQ", "DispatchTime"]
 - ["SQ", "LaunchOptionsKey"]
 - !private ["SQ", "NSPersistentContainer"]
 - !private ["SQ", "UIScreen"]
+- !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "UIWindow"]
 - ["SQ", ""]
 - !private ["SQ", "_getBuiltinLogicValue"]
@@ -199,15 +230,18 @@ depends-member:
 - ["SQ", "applicationWillEnterForeground"]
 - ["SQ", "applicationWillResignActive"]
 - ["SQ", "applicationWillTerminate"]
+- !private ["SQ", "asyncAfter"]
 - !private ["SQ", "bounds"]
 - !private ["SQ", "fatalError"]
 - !private ["SQ", "hasChanges"]
 - !private ["SQ", "homeViewController"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
+- !private ["SQ", "instantiateInitialViewController"]
 - !private ["SQ", "loadPersistentStores"]
 - !private ["SQ", "main"]
 - !private ["SQ", "makeKeyAndVisible"]
+- !private ["SQ", "now"]
 - !private ["SQ", "persistentContainer"]
 - !private ["SQ", "rootViewController"]
 - !private ["SQ", "save"]
@@ -223,9 +257,12 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "DispatchQueue"]
+- !private ["SH", "DispatchTime"]
 - ["SH", "LaunchOptionsKey"]
 - !private ["SH", "NSPersistentContainer"]
 - !private ["SH", "UIScreen"]
+- !private ["SH", "UIStoryboard"]
 - !private ["SH", "UIWindow"]
 - ["SH", ""]
 - !private ["SH", "_getBuiltinLogicValue"]
@@ -241,12 +278,14 @@ depends-member:
 - ["SH", "applicationWillEnterForeground"]
 - ["SH", "applicationWillResignActive"]
 - ["SH", "applicationWillTerminate"]
+- !private ["SH", "asyncAfter"]
 - !private ["SH", "bounds"]
 - !private ["SH", "fatalError"]
 - !private ["SH", "hasChanges"]
 - !private ["SH", "homeViewController"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
+- !private ["SH", "instantiateInitialViewController"]
 - !private ["SH", "loadPersistentStores"]
 - !private ["SH", "main"]
 - !private ["SH", "makeKeyAndVisible"]
@@ -276,11 +315,14 @@ depends-member:
 - !private ["So22NSManagedObjectContextC", "hasChanges"]
 - !private ["So22NSManagedObjectContextC", "save"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "DispatchQueue"]
+- !private ["So8NSObjectC", "DispatchTime"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - !private ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "NSPersistentContainer"]
 - ["So8NSObjectC", "UIApplication"]
 - !private ["So8NSObjectC", "UIScreen"]
+- !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", "application"]
 - ["So8NSObjectC", "applicationDidBecomeActive"]
@@ -294,12 +336,14 @@ depends-member:
 - ["So8NSObjectC", "applicationWillEnterForeground"]
 - ["So8NSObjectC", "applicationWillResignActive"]
 - ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "asyncAfter"]
 - !private ["So8NSObjectC", "bounds"]
 - !private ["So8NSObjectC", "fatalError"]
 - !private ["So8NSObjectC", "hasChanges"]
 - !private ["So8NSObjectC", "homeViewController"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateInitialViewController"]
 - !private ["So8NSObjectC", "loadPersistentStores"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "makeKeyAndVisible"]
@@ -311,9 +355,12 @@ depends-member:
 - !private ["So8NSObjectC", "userInfo"]
 - !private ["So8NSObjectC", "viewContext"]
 - ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "DispatchQueue"]
+- !private ["So8NSObjectP", "DispatchTime"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - !private ["So8NSObjectP", "NSPersistentContainer"]
 - !private ["So8NSObjectP", "UIScreen"]
+- !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "UIWindow"]
 - ["So8NSObjectP", ""]
 - ["So8NSObjectP", "application"]
@@ -328,12 +375,14 @@ depends-member:
 - ["So8NSObjectP", "applicationWillEnterForeground"]
 - ["So8NSObjectP", "applicationWillResignActive"]
 - ["So8NSObjectP", "applicationWillTerminate"]
+- !private ["So8NSObjectP", "asyncAfter"]
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "fatalError"]
 - !private ["So8NSObjectP", "hasChanges"]
 - !private ["So8NSObjectP", "homeViewController"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateInitialViewController"]
 - !private ["So8NSObjectP", "loadPersistentStores"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "makeKeyAndVisible"]
@@ -348,6 +397,8 @@ depends-member:
 - !private ["So21NSPersistentContainerC", "loadPersistentStores"]
 - !private ["So21NSPersistentContainerC", "viewContext"]
 - !private ["So14NSSecureCodingP", "userInfo"]
+- !private ["So9OS_objectC", "asyncAfter"]
+- !private ["So9OS_objectC", "main"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
 - !private ["ST", "init"]
@@ -372,8 +423,11 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
+- !private ["So21UIApplicationDelegateP", "DispatchQueue"]
+- !private ["So21UIApplicationDelegateP", "DispatchTime"]
 - !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
 - !private ["So21UIApplicationDelegateP", "UIScreen"]
+- !private ["So21UIApplicationDelegateP", "UIStoryboard"]
 - !private ["So21UIApplicationDelegateP", "UIWindow"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
@@ -409,9 +463,12 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
 - !private ["So20UIFocusItemContainerP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
+- !private ["So30UIPasteConfigurationSupportingP", "DispatchTime"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
@@ -436,11 +493,14 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "saveContext"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "DispatchQueue"]
+- !private ["So11UIResponderC", "DispatchTime"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - !private ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "NSPersistentContainer"]
 - ["So11UIResponderC", "UIApplication"]
 - !private ["So11UIResponderC", "UIScreen"]
+- !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UIWindow"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "application"]
@@ -465,9 +525,12 @@ depends-member:
 - !private ["So11UIResponderC", "rootViewController"]
 - ["So11UIResponderC", "saveContext"]
 - ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
+- !private ["So30UIResponderStandardEditActionsP", "DispatchTime"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
+- !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
@@ -495,6 +558,8 @@ depends-member:
 - !private ["So8UIScreenC", "main"]
 - !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So12UIStoryboardC", "init"]
+- !private ["So12UIStoryboardC", "instantiateInitialViewController"]
 - !private ["So21UITableViewDataSourceP", "init"]
 - !private ["So19UITableViewDelegateP", "init"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
@@ -502,9 +567,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "main"]
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "DispatchQueue"]
+- !private ["So23UIUserActivityRestoringP", "DispatchTime"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "NSPersistentContainer"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
+- !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
 - ["So23UIUserActivityRestoringP", ""]
 - ["So23UIUserActivityRestoringP", "application"]
@@ -549,9 +617,12 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchTime"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
@@ -566,12 +637,14 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "asyncAfter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasChanges"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "homeViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateInitialViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "loadPersistentStores"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
@@ -602,6 +675,9 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "8Dispatch0A4TimeV"
 - !private "SE"
 - "SQ"
 - !private "s5ErrorP"
@@ -622,6 +698,7 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So21NSPersistentContainerC"
 - !private "So14NSSecureCodingP"
+- !private "So9OS_objectC"
 - !private "Sm"
 - !private "ST"
 - !private "s12StaticStringV"
@@ -646,6 +723,7 @@ depends-nominal:
 - !private "So8UIScreenC"
 - !private "So20UIScrollViewDelegateP"
 - !private "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
 - !private "So21UITableViewDataSourceP"
 - !private "So19UITableViewDelegateP"
 - !private "So18UITraitEnvironmentP"
