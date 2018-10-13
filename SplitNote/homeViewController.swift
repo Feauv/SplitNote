@@ -34,8 +34,20 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let x = (view.frame.width/2) - 45
+        let y = (view.frame.height - 200)/2
+        
+        let centerImage: UIImageView = {
+            
+            let cI = UIImageView(frame: CGRect(x: x, y: y - 50, width: 100, height: 120))
+            cI.image = UIImage(named: "mainIconWhite")
+            return cI
+        }()
+        
         setupConstComponents()
         setupRecentsView()
+        
+        self.homeView.addSubview(centerImage)
         
     }
     
@@ -47,7 +59,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         titleLabel = UILabel(frame: CGRect(x: 0, y: 50, width: view.frame.width, height: 100))
         titleLabel.text = "SplitNote"
         titleLabel.textColor = UIColor.white
-        titleLabel.font = UIFont.init(name: "HelveticaNeue-Ultralight", size: 40)
+        titleLabel.font = UIFont.init(name: "HelveticaNeue-Bold", size: 40)
         titleLabel.textAlignment = NSTextAlignment.center
         
         new = UIButton(frame: CGRect(x: 50, y: ((view.frame.height*2)/3) - 60, width: view.frame.width - 100, height: 50))
