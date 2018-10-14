@@ -76,7 +76,8 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
     }()
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You selected one of your notes")
+        self.present(UINavigationController(rootViewController: NotesViewController()), animated: true, completion: nil)
+        print("You selected one of your folders")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,7 +85,7 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+        let cell = FolderCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cellId")
         
         return cell
     }

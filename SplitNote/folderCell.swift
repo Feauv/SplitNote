@@ -10,10 +10,21 @@ import UIKit
 
 class FolderCell: UITableViewCell {
     
+    @IBOutlet var testTextLabel: UILabel!
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        contentView.backgroundColor = .white
+        backgroundColor = .white
+        
+        testTextLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width/2, height: 50))
+        testTextLabel.text = "Click Me!"
+        testTextLabel.textColor = .black
+        testTextLabel.textAlignment = NSTextAlignment.left
+        testTextLabel.font = UIFont(name: "Helvetica-Ultralight", size: 20)
+        
+        addSubview(testTextLabel)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
