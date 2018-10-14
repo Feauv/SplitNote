@@ -63,17 +63,26 @@ class NoteDetailViewController: UIViewController {
         previousNote.layer.borderColor = UIColor.white.cgColor
         previousNote.layer.borderWidth = 1.0
         
+        previousNote.setTitle("Prev.", for: [])
+        previousNote.setTitleColor(.white, for: [])
+        
         play = UIButton(frame: CGRect(x: (view.frame.width/2) - 25, y: 80, width: 50, height: 50))
         play.backgroundColor = .clear
         play.layer.cornerRadius = 25
         play.layer.borderColor = UIColor.white.cgColor
         play.layer.borderWidth = 1.0
         
+        play.setTitle("Play", for: [])
+        play.setTitleColor(.white, for: [])
+        
         nextNote = UIButton(frame: CGRect(x: view.frame.width - 130, y: 80, width: 50, height: 50))
         nextNote.backgroundColor = .clear
         nextNote.layer.cornerRadius = 25
         nextNote.layer.borderColor = UIColor.white.cgColor
         nextNote.layer.borderWidth = 1.0
+        
+        nextNote.setTitle("Next", for: [])
+        nextNote.setTitleColor(.white, for: [])
         
         divider = UIView(frame: CGRect(x: 0, y: 180, width: view.frame.width, height: 1))
         divider.backgroundColor = .white
