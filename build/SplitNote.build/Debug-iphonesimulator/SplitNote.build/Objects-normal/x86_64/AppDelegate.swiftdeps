@@ -23,12 +23,13 @@ depends-top-level:
 - !private "DispatchQueue"
 - !private "DispatchTime"
 - !private "FloatLiteralType"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - !private "NSError"
 - "NSPersistentContainer"
 - !private "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
+- !private "UINavigationController"
 - "UIResponder"
 - !private "UIScreen"
 - !private "UIStoryboard"
@@ -42,6 +43,7 @@ depends-member:
 - !private ["9SplitNote11AppDelegateC", "NSError"]
 - ["9SplitNote11AppDelegateC", "NSPersistentContainer"]
 - ["9SplitNote11AppDelegateC", "UIApplication"]
+- !private ["9SplitNote11AppDelegateC", "UINavigationController"]
 - !private ["9SplitNote11AppDelegateC", "UIScreen"]
 - !private ["9SplitNote11AppDelegateC", "UIStoryboard"]
 - ["9SplitNote11AppDelegateC", "UIWindow"]
@@ -75,6 +77,7 @@ depends-member:
 - !private ["s7CVarArgP", "DispatchTime"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - !private ["s7CVarArgP", "NSPersistentContainer"]
+- !private ["s7CVarArgP", "UINavigationController"]
 - !private ["s7CVarArgP", "UIScreen"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UIWindow"]
@@ -119,6 +122,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "DispatchTime"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "UINavigationController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
@@ -163,6 +167,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "DispatchTime"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
+- !private ["s23CustomStringConvertibleP", "UINavigationController"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
@@ -213,6 +218,7 @@ depends-member:
 - !private ["SQ", "DispatchTime"]
 - ["SQ", "LaunchOptionsKey"]
 - !private ["SQ", "NSPersistentContainer"]
+- !private ["SQ", "UINavigationController"]
 - !private ["SQ", "UIScreen"]
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "UIWindow"]
@@ -261,6 +267,7 @@ depends-member:
 - !private ["SH", "DispatchTime"]
 - ["SH", "LaunchOptionsKey"]
 - !private ["SH", "NSPersistentContainer"]
+- !private ["SH", "UINavigationController"]
 - !private ["SH", "UIScreen"]
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "UIWindow"]
@@ -321,6 +328,7 @@ depends-member:
 - !private ["So8NSObjectC", "NSError"]
 - ["So8NSObjectC", "NSPersistentContainer"]
 - ["So8NSObjectC", "UIApplication"]
+- !private ["So8NSObjectC", "UINavigationController"]
 - !private ["So8NSObjectC", "UIScreen"]
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UIWindow"]
@@ -359,6 +367,7 @@ depends-member:
 - !private ["So8NSObjectP", "DispatchTime"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - !private ["So8NSObjectP", "NSPersistentContainer"]
+- !private ["So8NSObjectP", "UINavigationController"]
 - !private ["So8NSObjectP", "UIScreen"]
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "UIWindow"]
@@ -426,6 +435,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "DispatchQueue"]
 - !private ["So21UIApplicationDelegateP", "DispatchTime"]
 - !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
+- !private ["So21UIApplicationDelegateP", "UINavigationController"]
 - !private ["So21UIApplicationDelegateP", "UIScreen"]
 - !private ["So21UIApplicationDelegateP", "UIStoryboard"]
 - !private ["So21UIApplicationDelegateP", "UIWindow"]
@@ -463,10 +473,12 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
 - !private ["So20UIFocusItemContainerP", "rootViewController"]
+- !private ["So22UINavigationControllerC", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchTime"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "UINavigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
@@ -499,6 +511,7 @@ depends-member:
 - !private ["So11UIResponderC", "NSError"]
 - ["So11UIResponderC", "NSPersistentContainer"]
 - ["So11UIResponderC", "UIApplication"]
+- !private ["So11UIResponderC", "UINavigationController"]
 - !private ["So11UIResponderC", "UIScreen"]
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UIWindow"]
@@ -529,6 +542,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "DispatchTime"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
+- !private ["So30UIResponderStandardEditActionsP", "UINavigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
@@ -571,6 +585,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "DispatchTime"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "NSPersistentContainer"]
+- !private ["So23UIUserActivityRestoringP", "UINavigationController"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
 - !private ["So23UIUserActivityRestoringP", "UIStoryboard"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
@@ -621,6 +636,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchTime"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UINavigationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
@@ -717,6 +733,7 @@ depends-nominal:
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
+- !private "So22UINavigationControllerC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"

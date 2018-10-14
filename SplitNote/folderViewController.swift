@@ -33,13 +33,12 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
         
         navigationController?.navigationBar.barTintColor = SplitNoteDarkPurple
         
-        navigationItem.title = "FOLDERS"
+        navigationItem.title = "Folders"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        let createFolder = UIBarButtonItem(title: "ADD", style: .done, target: self, action: #selector(addFolder))
+        let createFolder = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addFolder))
         
-        let returnHomeButton = UIBarButtonItem(title: "HOME", style: .done, target: self, action: #selector(goHome))
-        
+        let returnHomeButton = UIBarButtonItem(title: "Home", style: .done, target: self, action: #selector(goHome))
         
         returnHomeButton.tintColor = .white
         createFolder.tintColor = .white
@@ -72,15 +71,6 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    let add: UIBarButtonItem = {
-        
-        let a = UIBarButtonItem()
-        a.title = "ADD"
-        a.tintColor = .white
-        return a
-        
-    }()
-    
     let foldersHeader: FoldersHeaderView = {
         
         let fH = FoldersHeaderView()
@@ -89,7 +79,7 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
     }()
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.present(UINavigationController(rootViewController: NotesViewController()), animated: true, completion: nil)
+        navigationController?.pushViewController(NotesViewController(), animated: true)
         print("You selected one of your folders")
     }
     
