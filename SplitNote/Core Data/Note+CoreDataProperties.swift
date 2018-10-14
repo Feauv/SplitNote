@@ -21,6 +21,7 @@ extension Note {
     @NSManaged public var title: String?
     @NSManaged public var transcriptedText: String?
     @NSManaged public var notes: String?
+    @NSManaged public var audioID: String?
     @NSManaged public var folder: Folder?
 
 }

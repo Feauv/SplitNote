@@ -12,5 +12,8 @@ import CoreData
 
 @objc(Folder)
 public class Folder: NSManagedObject {
+    var notes: [Note]? {
+        
+    }
 
 }
