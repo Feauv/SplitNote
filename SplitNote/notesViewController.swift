@@ -52,7 +52,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     private func setupTableView() {
         
-        notes = UITableView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        notes = UITableView(frame: CGRect(x: 0, y: 50, width: view.frame.width, height: view.frame.height))
         notes.register(NoteCell.self, forCellReuseIdentifier: "cellId")
         notes.rowHeight = 50
         notes.dataSource = self
@@ -96,9 +96,17 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
+    
+    let titles = ["Interview 2", "Meeting 2", "Conference Call 1", "Interview 1", "Meeting 1"]
+    let durations = ["21:30", "43:09", "1:05:54", "34:23", "55:04"]
+    let dates = ["10/14/20", "10/13/20", "10/13/20", "10/12/20", "10/11/20"]
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! NoteCell
+        
+        cell.title.text = titles[indexPath.row]
+        cell.duration.text = durations[indexPath.row]
+        cell.date.text = dates[indexPath.row]
         
         return cell
     }

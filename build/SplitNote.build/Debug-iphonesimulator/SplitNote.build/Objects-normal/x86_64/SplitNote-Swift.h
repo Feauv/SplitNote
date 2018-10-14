@@ -203,7 +203,8 @@ SWIFT_CLASS("_TtC9SplitNote11AppDelegate")
 
 SWIFT_CLASS("_TtC9SplitNote10FolderCell")
 @interface FolderCell : UITableViewCell
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified testTextLabel;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified numOfFiles;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -273,6 +274,9 @@ SWIFT_CLASS("_TtC9SplitNote21NewNoteViewController")
 
 SWIFT_CLASS("_TtC9SplitNote8NoteCell")
 @interface NoteCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified duration;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

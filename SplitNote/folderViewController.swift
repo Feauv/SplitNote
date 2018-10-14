@@ -54,7 +54,7 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
     
     private func setupTableView() {
         
-        folders = UITableView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        folders = UITableView(frame: CGRect(x: 0, y: 50, width: view.frame.width, height: view.frame.height))
         folders.register(FolderCell.self, forCellReuseIdentifier: "cellId")
         folders.rowHeight = 50
         folders.dataSource = self
@@ -84,11 +84,17 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
     
+    let titles = ["Interviews", "Meetings", "Miscellaneous"]
+    let nums = ["5", "3", "1"]
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = FolderCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cellId")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! FolderCell
+        
+        cell.title.text = titles[indexPath.row]
+        cell.numOfFiles.text = nums[indexPath.row]
         
         return cell
     }

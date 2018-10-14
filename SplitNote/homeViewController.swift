@@ -132,7 +132,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     let titles = ["Interview", "Meeting", "Conference Call"]
     //let durations = ["21:30", "43:09", "1:05:54"]
-    let dates = ["10/14/20", "10/15/20", "10/15/20"]
+    let dates = ["10/14/20", "10/13/20", "10/13/20"]
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath as IndexPath) as! RecentsCell
