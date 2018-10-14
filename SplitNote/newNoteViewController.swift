@@ -57,6 +57,10 @@ class NewNoteViewController: UIViewController {
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     fileprivate func startRecording() {
         
         // 1
@@ -286,13 +290,14 @@ class NewNoteViewController: UIViewController {
     
     @objc func goHome() {
         
-    self.present(homeViewController(), animated: true, completion: nil)
-
+        //self.present(homeViewController(), animated: true, completion: nil)
+        navigationController?.popToRootViewController(animated: true)
         
     }
     
     @objc func goToFolders(){
-        self.present(UINavigationController(rootViewController: FolderViewController()), animated: true, completion: nil)
+        //self.present(UINavigationController(rootViewController: FolderViewController()), animated: true, completion: nil)
+        navigationController?.pushViewController(FolderViewController(), animated: true)
     }
     
 }

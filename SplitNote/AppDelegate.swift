@@ -26,9 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UINavigationController(rootViewController: FolderViewController())
 //        UINavigationController(rootViewController: NotesViewController())
 //
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5) {
             
-            self.window?.rootViewController = homeViewController()
+            self.window?.rootViewController = UINavigationController(rootViewController: homeViewController())
             
         }
         

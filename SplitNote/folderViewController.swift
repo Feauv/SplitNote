@@ -19,6 +19,9 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.isNavigationBarHidden = false
+
+        
         view.backgroundColor = .white
         setupNavigationBarItems()
         setupTableView()
@@ -35,9 +38,14 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
         
         let createFolder = UIBarButtonItem(title: "ADD", style: .done, target: self, action: #selector(addFolder))
         
+        let returnHomeButton = UIBarButtonItem(title: "HOME", style: .done, target: self, action: #selector(goHome))
+        
+        
+        returnHomeButton.tintColor = .white
         createFolder.tintColor = .white
         
         navigationItem.rightBarButtonItem = createFolder
+        navigationItem.leftBarButtonItem = returnHomeButton
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -112,6 +120,12 @@ class FolderViewController: UIViewController, UITableViewDataSource, UITableView
         
         self.present(alert, animated: true)
 
+    }
+    
+    @objc func goHome(){
+        
+//        self.present(homeViewController(), animated: true, completion: nil)
+        navigationController?.popToRootViewController(animated: true)
     }
     
 }
