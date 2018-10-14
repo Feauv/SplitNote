@@ -33,7 +33,16 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         navigationItem.title = "Notes"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        navigationItem.rightBarButtonItem = add
+        
+        let createNote = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addNote))
+        
+        let returnToFolders = UIBarButtonItem(title: "Folders", style: .done, target: self, action: #selector(goToFolders))
+        
+        createNote.tintColor = .white
+        returnToFolders.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = createNote
+        navigationItem.leftBarButtonItem = returnToFolders
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -60,14 +69,17 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
-    let add: UIBarButtonItem = {
+    @objc func goToFolders() {
         
-        let a = UIBarButtonItem()
-        a.title = "ADD"
-        a.tintColor = .white
-        return a
+        navigationController?.popViewController(animated: true)
         
-    }()
+    }
+    
+    @objc func addNote() {
+        
+        navigationController?.pushViewController(NewNoteViewController(), animated: true)
+        
+    }
     
     let notesHeader: NotesHeaderView = {
         
@@ -77,6 +89,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     }()
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.present(UINavigationController(rootViewController: NoteDetailViewController()), animated: true, completion: nil)
         print("You selected one of your notes")
     }
     

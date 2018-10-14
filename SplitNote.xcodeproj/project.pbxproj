@@ -21,6 +21,7 @@
 		95303F30217285F8003519D3 /* notesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F2F217285F8003519D3 /* notesViewController.swift */; };
 		95303F332172C498003519D3 /* notesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F322172C498003519D3 /* notesHeaderView.swift */; };
 		95303F352172C4D7003519D3 /* noteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F342172C4D7003519D3 /* noteCell.swift */; };
+		95303F3721731C59003519D3 /* noteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F3621731C59003519D3 /* noteDetailViewController.swift */; };
 		E2ADFD5421728B3800A90069 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2ADFD5321728B3800A90069 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		95303F2F217285F8003519D3 /* notesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesViewController.swift; sourceTree = "<group>"; };
 		95303F322172C498003519D3 /* notesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesHeaderView.swift; sourceTree = "<group>"; };
 		95303F342172C4D7003519D3 /* noteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteCell.swift; sourceTree = "<group>"; };
+		95303F3621731C59003519D3 /* noteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteDetailViewController.swift; sourceTree = "<group>"; };
 		E2ADFD5321728B3800A90069 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				95303F1D2171C2C5003519D3 /* newNoteViewController.swift */,
 				95303F21217259FC003519D3 /* folderViewController.swift */,
 				95303F2F217285F8003519D3 /* notesViewController.swift */,
+				95303F3621731C59003519D3 /* noteDetailViewController.swift */,
 				4926E8372171914F00AFB28E /* Model */,
 				4926E8382171916400AFB28E /* View */,
 				95303F2C21727284003519D3 /* Helpers */,
@@ -204,6 +207,7 @@
 				4926E82321718F7800AFB28E /* AppDelegate.swift in Sources */,
 				95303F202171C2FD003519D3 /* recentsCell.swift in Sources */,
 				95303F22217259FC003519D3 /* folderViewController.swift in Sources */,
+				95303F3721731C59003519D3 /* noteDetailViewController.swift in Sources */,
 				95303F332172C498003519D3 /* notesHeaderView.swift in Sources */,
 				95303F2E217272B7003519D3 /* extensions.swift in Sources */,
 				95303F2B21727226003519D3 /* foldersHeaderView.swift in Sources */,

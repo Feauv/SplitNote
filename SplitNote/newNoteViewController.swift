@@ -49,7 +49,7 @@ class NewNoteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        //view.backgroundColor = .white
         
         setupComponents()
         setupNavigationBarItems()
@@ -151,6 +151,8 @@ class NewNoteViewController: UIViewController {
         setSplitNoteStandardLabel(label: transcription)
         transcription.layer.borderColor = UIColor.lightGray.cgColor
         transcription.layer.borderWidth = 1.0
+        transcription.lineBreakMode = .byWordWrapping
+        transcription.numberOfLines = 100
         
         flagLabel = UILabel(frame: CGRect(x: 40, y: view.frame.height - 230, width: view.frame.width - 160, height: 120))
         setSplitNoteStandardLabel(label: flagLabel)
@@ -172,8 +174,12 @@ class NewNoteViewController: UIViewController {
         enterFlagText.addTarget(self, action: #selector(enterText(_:)), for: .touchUpInside)
         
         record = UIButton(frame: CGRect(x: 60, y: (view.frame.height*4.5/8) + 30, width: 80, height: 80))
-        record.setTitle("RECORD", for: [])
-        record.setTitleColor(.red, for: [])
+//        record.setTitle("RECORD", for: [])
+//        record.setTitleColor(.red, for: [])
+        
+        record.setImage(UIImage(named: "recordRed"), for: [])
+        record.imageRect(forContentRect: CGRect(x: 0, y: 0, width: 40, height: 40))
+        //record.currentBackgroundImage?.withAlignmentRectInsets(UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5))
         record.backgroundColor = .clear
         record.layer.cornerRadius = 40
         record.layer.borderColor = UIColor.red.cgColor
@@ -181,8 +187,9 @@ class NewNoteViewController: UIViewController {
         record.addTarget(self, action: #selector(recordSpeech(_:)), for: .touchUpInside)
         
         flag = UIButton(frame: CGRect(x: view.frame.width - 140, y: (view.frame.height*4.5/8) + 30, width: 80, height: 80))
-        flag.setTitle("FLAG", for: [])
-        flag.setTitleColor(UIColor(displayP3Red: 242/255, green: 208/255, blue: 23/255, alpha: 1.0), for: [])
+//        flag.setTitle("FLAG", for: [])
+//        flag.setTitleColor(UIColor(displayP3Red: 242/255, green: 208/255, blue: 23/255, alpha: 1.0), for: [])
+        flag.setImage(UIImage(named: "flagGold"), for: [])
         flag.backgroundColor = .clear
         flag.layer.cornerRadius = 40
         flag.layer.borderColor = UIColor(displayP3Red: 255/255, green: 215/255, blue: 0/255, alpha: 1.0).cgColor
@@ -213,9 +220,9 @@ class NewNoteViewController: UIViewController {
         navigationItem.title = "SplitNote"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        let home = UIBarButtonItem(title: "HOME", style: .done, target: self, action: #selector(goHome))
+        let home = UIBarButtonItem(title: "Home", style: .done, target: self, action: #selector(goHome))
         
-        let folders = UIBarButtonItem(title: "FOLDERS", style: .done, target: self, action: #selector(goToFolders))
+        let folders = UIBarButtonItem(title: "Folders", style: .done, target: self, action: #selector(goToFolders))
         
         home.tintColor = .white
         folders.tintColor = .white
@@ -257,7 +264,7 @@ class NewNoteViewController: UIViewController {
     
     @IBAction func enterText(_ sender: Any?) {
         
-        transcription.text = transcription.text ?? "" + " Selected"
+        
         
     }
     

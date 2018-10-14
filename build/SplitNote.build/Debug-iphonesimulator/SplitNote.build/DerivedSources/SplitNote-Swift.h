@@ -218,6 +218,8 @@ SWIFT_CLASS("_TtC9SplitNote20FolderViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)addFolder;
+- (void)goHome;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -258,9 +260,12 @@ SWIFT_CLASS("_TtC9SplitNote21NewNoteViewController")
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified divider;
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified recordingInterface;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)enterText:(id _Nullable)sender;
 - (IBAction)recordSpeech:(id _Nullable)sender;
 - (IBAction)flagSpeech:(id _Nullable)sender;
+- (void)goHome;
+- (void)goToFolders;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -269,6 +274,22 @@ SWIFT_CLASS("_TtC9SplitNote21NewNoteViewController")
 SWIFT_CLASS("_TtC9SplitNote8NoteCell")
 @interface NoteCell : UITableViewCell
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIProgressView;
+
+SWIFT_CLASS("_TtC9SplitNote24NoteDetailViewController")
+@interface NoteDetailViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UIProgressView * _Null_unspecified progressBar;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified transcriptionBackground;
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified divider;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified transcription;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified previousNote;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified play;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified nextNote;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -296,6 +317,8 @@ SWIFT_CLASS("_TtC9SplitNote19NotesViewController")
 @interface NotesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified notes;
 - (void)viewDidLoad;
+- (void)goToFolders;
+- (void)addNote;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -306,6 +329,9 @@ SWIFT_CLASS("_TtC9SplitNote19NotesViewController")
 
 SWIFT_CLASS("_TtC9SplitNote11RecentsCell")
 @interface RecentsCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified duration;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified date;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -321,6 +347,7 @@ SWIFT_CLASS("_TtC9SplitNote18homeViewController")
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified recents;
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified homeView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)newNote:(id _Nullable)sender;
 - (IBAction)openFolders:(id _Nullable)sender;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

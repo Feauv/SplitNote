@@ -27,7 +27,7 @@ class NotesHeaderView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
         
         super.init(frame: frame)
         
-        collectionView.register(FoldersHeaderViewCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView.register(NotesHeaderViewCell.self, forCellWithReuseIdentifier: cellId)
         
         addSubview(collectionView)
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
@@ -36,11 +36,11 @@ class NotesHeaderView: UIView, UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! FoldersHeaderViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! NotesHeaderViewCell
         
         cell.headerLabel.text = barHeadings[indexPath.row]
         cell.layer.borderWidth = 1.0
