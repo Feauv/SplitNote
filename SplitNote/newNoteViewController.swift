@@ -8,8 +8,9 @@
 
 import UIKit
 import Speech
+import AVFoundation
 
-class NewNoteViewController: UIViewController {
+class NewNoteViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBOutlet var transcription: UILabel!
     @IBOutlet var flagLabel: UILabel!
@@ -25,10 +26,17 @@ class NewNoteViewController: UIViewController {
     
     var flaggingBool = false
     var recordingBool = false
+    var uniqueID = UUID().uuidString
+    
+    // Speech recognition
     let audioEngine = AVAudioEngine()
     let speechRecognizer = SFSpeechRecognizer()
     let request = SFSpeechAudioBufferRecognitionRequest()
     var recognitionTask: SFSpeechRecognitionTask?
+    
+    //Audio recording
+    var recordingSession: AVAudioSession!
+    var audioRecorder: AVAudioRecorder!
     
     var SplitNoteDarkPurple = UIColor(displayP3Red: 66/255, green: 39/255, blue: 90/255, alpha: 1.0)
     var SplitNoteLightPurple = UIColor(displayP3Red: 115/255, green: 75/255, blue: 109/255, alpha: 1.0)
@@ -51,9 +59,21 @@ class NewNoteViewController: UIViewController {
         
         //view.backgroundColor = .white
         
+        print(uniqueID)
+        
+        recordingSession = AVAudioSession.sharedInstance()
+        
+        do {
+            try recordingSession.setCategory(.playAndRecord, mode: .default)
+            try recordingSession.setActive(true)
+            self.requestSpeechAuthorization()
+        } catch {
+            print(error)
+            print("Something went wrong")
+        }
+        
         setupComponents()
         setupNavigationBarItems()
-        self.requestSpeechAuthorization()
 
     }
     
@@ -61,34 +81,39 @@ class NewNoteViewController: UIViewController {
         navigationController?.isNavigationBarHidden = false
     }
     
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
     fileprivate func startRecording() {
         
-        // 1
+        // Setup input node
         let node = audioEngine.inputNode
         let recordingFormat = node.outputFormat(forBus: 0)
-        
-        // 2
         node.installTap(onBus: 0, bufferSize: 1024,
                         format: recordingFormat) { [unowned self]
                             (buffer, _) in
                             self.request.append(buffer)
         }
         
-        // 3
+        // Begin Speech Recognition
         do {
             try audioEngine.start()
         } catch {
             return print(error)
         }
+        
         guard let myRecognizer = SFSpeechRecognizer() else {
             self.sendAlert(message: "Speech recognition is not supported for your current locale.")
             return
         }
+        
         if !myRecognizer.isAvailable {
-            self.sendAlert(message: "Speech recognition is not currently available. Check back at a later time.")
-            // Recognizer is not available right now
+            self.sendAlert(message: "Speech recognition is not currently available.")
             return
         }
+        
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
             if let result = result {
                 
@@ -101,17 +126,38 @@ class NewNoteViewController: UIViewController {
                     lastString = bestString.substring(from: indexTo)
                 }
             } else if let error = error {
-                self.sendAlert(message: "There has been a speech recognition error.")
+                // self.sendAlert(message: "There has been a speech recognition error.")
                 print(error)
             }
         })
+        
+        // Begin audio recording
+        
+        let audioFilename = getDocumentsDirectory().appendingPathComponent(uniqueID + ".m4a")
+        
+        let settings = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+        do {
+            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
+            audioRecorder.delegate = self
+            audioRecorder.record()
+        } catch {
+            print(error)
+        }
     }
     
     fileprivate func stopRecording() {
         audioEngine.stop()
         request.endAudio()
         recognitionTask?.cancel()
+        audioRecorder.stop()
+        audioRecorder = nil
     }
+
 
     func requestSpeechAuthorization() {
         SFSpeechRecognizer.requestAuthorization { authStatus in
