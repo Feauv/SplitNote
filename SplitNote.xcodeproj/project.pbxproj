@@ -23,6 +23,10 @@
 		95303F352172C4D7003519D3 /* noteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F342172C4D7003519D3 /* noteCell.swift */; };
 		95303F3721731C59003519D3 /* noteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95303F3621731C59003519D3 /* noteDetailViewController.swift */; };
 		E2ADFD5421728B3800A90069 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2ADFD5321728B3800A90069 /* Launch Screen.storyboard */; };
+		E2D908BA2172F50C00EFC985 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D908B62172F50C00EFC985 /* Note+CoreDataClass.swift */; };
+		E2D908BB2172F50C00EFC985 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D908B72172F50C00EFC985 /* Note+CoreDataProperties.swift */; };
+		E2D908BC2172F50C00EFC985 /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D908B82172F50C00EFC985 /* Folder+CoreDataClass.swift */; };
+		E2D908BD2172F50C00EFC985 /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D908B92172F50C00EFC985 /* Folder+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		95303F342172C4D7003519D3 /* noteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteCell.swift; sourceTree = "<group>"; };
 		95303F3621731C59003519D3 /* noteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteDetailViewController.swift; sourceTree = "<group>"; };
 		E2ADFD5321728B3800A90069 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E2D908B62172F50C00EFC985 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "../Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2D908B72172F50C00EFC985 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E2D908B82172F50C00EFC985 /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Folder+CoreDataClass.swift"; path = "../Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E2D908B92172F50C00EFC985 /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 		4926E82121718F7800AFB28E /* SplitNote */ = {
 			isa = PBXGroup;
 			children = (
+				E2D908A52172E92400EFC985 /* Core Data */,
 				4926E82221718F7800AFB28E /* AppDelegate.swift */,
 				4926E82421718F7800AFB28E /* homeViewController.swift */,
 				95303F1D2171C2C5003519D3 /* newNoteViewController.swift */,
@@ -128,6 +137,17 @@
 			);
 			name = Launchboard;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E2D908A52172E92400EFC985 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				E2D908B62172F50C00EFC985 /* Note+CoreDataClass.swift */,
+				E2D908B72172F50C00EFC985 /* Note+CoreDataProperties.swift */,
+				E2D908B82172F50C00EFC985 /* Folder+CoreDataClass.swift */,
+				E2D908B92172F50C00EFC985 /* Folder+CoreDataProperties.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4926E82521718F7800AFB28E /* homeViewController.swift in Sources */,
+				E2D908BD2172F50C00EFC985 /* Folder+CoreDataProperties.swift in Sources */,
+				E2D908BB2172F50C00EFC985 /* Note+CoreDataProperties.swift in Sources */,
+				E2D908BC2172F50C00EFC985 /* Folder+CoreDataClass.swift in Sources */,
 				95303F1E2171C2C5003519D3 /* newNoteViewController.swift in Sources */,
 				95303F30217285F8003519D3 /* notesViewController.swift in Sources */,
 				4926E82321718F7800AFB28E /* AppDelegate.swift in Sources */,
@@ -209,6 +232,7 @@
 				95303F22217259FC003519D3 /* folderViewController.swift in Sources */,
 				95303F3721731C59003519D3 /* noteDetailViewController.swift in Sources */,
 				95303F332172C498003519D3 /* notesHeaderView.swift in Sources */,
+				E2D908BA2172F50C00EFC985 /* Note+CoreDataClass.swift in Sources */,
 				95303F2E217272B7003519D3 /* extensions.swift in Sources */,
 				95303F2B21727226003519D3 /* foldersHeaderView.swift in Sources */,
 				95303F2421725AA1003519D3 /* folderCell.swift in Sources */,
