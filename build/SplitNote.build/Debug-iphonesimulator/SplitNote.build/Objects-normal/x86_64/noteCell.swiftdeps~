@@ -1,17 +1,17 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "RecentsCell"
+- "NoteCell"
 provides-nominal:
-- "9SplitNote11RecentsCellC"
+- "9SplitNote0B4CellC"
 provides-member:
-- ["9SplitNote11RecentsCellC", ""]
+- ["9SplitNote0B4CellC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "NSCoder"
-- "RecentsCell"
+- "NoteCell"
 - "String"
 - !private "StringLiteralType"
 - "UITableViewCell"
@@ -22,11 +22,13 @@ depends-member:
 - ["So15CALayerDelegateP", "CellStyle"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "contentView"]
 - !private ["So15CALayerDelegateP", "fatalError"]
 - !private ["So15CALayerDelegateP", "init"]
 - ["s7CVarArgP", "CellStyle"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "contentView"]
 - !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
@@ -38,6 +40,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "CellStyle"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "contentView"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -50,6 +53,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "CellStyle"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "contentView"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -63,6 +67,7 @@ depends-member:
 - ["SQ", "CellStyle"]
 - ["SQ", ""]
 - !private ["SQ", "backgroundColor"]
+- !private ["SQ", "contentView"]
 - !private ["SQ", "fatalError"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
@@ -77,6 +82,7 @@ depends-member:
 - ["SH", "CellStyle"]
 - ["SH", ""]
 - !private ["SH", "backgroundColor"]
+- !private ["SH", "contentView"]
 - !private ["SH", "fatalError"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
@@ -88,6 +94,7 @@ depends-member:
 - ["So8NSCodingP", "CellStyle"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "contentView"]
 - !private ["So8NSCodingP", "fatalError"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "white"]
@@ -99,25 +106,27 @@ depends-member:
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UITableViewCell"]
 - !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "contentView"]
 - !private ["So8NSObjectC", "fatalError"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "white"]
 - ["So8NSObjectP", "CellStyle"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "contentView"]
 - !private ["So8NSObjectP", "fatalError"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "white"]
+- ["9SplitNote0B4CellC", "NSCoder"]
+- ["9SplitNote0B4CellC", "String"]
+- ["9SplitNote0B4CellC", "UITableViewCell"]
+- !private ["9SplitNote0B4CellC", "contentView"]
+- !private ["9SplitNote0B4CellC", "fatalError"]
+- ["9SplitNote0B4CellC", "init"]
 - !private ["Sq", "white"]
 - !private ["Sm", "init"]
 - !private ["Sm", "init"]
-- ["9SplitNote11RecentsCellC", "NSCoder"]
-- ["9SplitNote11RecentsCellC", "String"]
-- ["9SplitNote11RecentsCellC", "UITableViewCell"]
-- !private ["9SplitNote11RecentsCellC", "backgroundColor"]
-- !private ["9SplitNote11RecentsCellC", "fatalError"]
-- ["9SplitNote11RecentsCellC", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "init"]
 - !private ["s12StaticStringV", "init"]
@@ -133,52 +142,61 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "CellStyle"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "contentView"]
 - !private ["So29UIAccessibilityIdentificationP", "fatalError"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - ["So12UIAppearanceP", "CellStyle"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "contentView"]
 - !private ["So12UIAppearanceP", "fatalError"]
 - !private ["So12UIAppearanceP", "init"]
 - ["So21UIAppearanceContainerP", "CellStyle"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "contentView"]
 - !private ["So21UIAppearanceContainerP", "fatalError"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So7UIColorC", "white"]
 - ["So17UICoordinateSpaceP", "CellStyle"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "contentView"]
 - !private ["So17UICoordinateSpaceP", "fatalError"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - ["So13UIDynamicItemP", "CellStyle"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "contentView"]
 - !private ["So13UIDynamicItemP", "fatalError"]
 - !private ["So13UIDynamicItemP", "init"]
 - ["So18UIFocusEnvironmentP", "CellStyle"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "contentView"]
 - !private ["So18UIFocusEnvironmentP", "fatalError"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - ["So11UIFocusItemP", "CellStyle"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "contentView"]
 - !private ["So11UIFocusItemP", "fatalError"]
 - !private ["So11UIFocusItemP", "init"]
 - ["So20UIFocusItemContainerP", "CellStyle"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "contentView"]
 - !private ["So20UIFocusItemContainerP", "fatalError"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - ["So27UIGestureRecognizerDelegateP", "CellStyle"]
 - ["So27UIGestureRecognizerDelegateP", ""]
-- !private ["So27UIGestureRecognizerDelegateP", "backgroundColor"]
+- !private ["So27UIGestureRecognizerDelegateP", "contentView"]
 - !private ["So27UIGestureRecognizerDelegateP", "fatalError"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - ["So30UIPasteConfigurationSupportingP", "CellStyle"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "contentView"]
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - ["So11UIResponderC", "CellStyle"]
@@ -186,11 +204,13 @@ depends-member:
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UITableViewCell"]
 - !private ["So11UIResponderC", "backgroundColor"]
+- !private ["So11UIResponderC", "contentView"]
 - !private ["So11UIResponderC", "fatalError"]
 - ["So11UIResponderC", "init"]
 - ["So30UIResponderStandardEditActionsP", "CellStyle"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "contentView"]
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - ["So15UITableViewCellC", "CellStyle"]
@@ -198,17 +218,19 @@ depends-member:
 - ["So15UITableViewCellC", "String"]
 - ["So15UITableViewCellC", "UITableViewCell"]
 - ["So15UITableViewCellC", ""]
-- !private ["So15UITableViewCellC", "backgroundColor"]
+- !private ["So15UITableViewCellC", "contentView"]
 - !private ["So15UITableViewCellC", "fatalError"]
 - ["So15UITableViewCellC", "init"]
 - ["So18UITraitEnvironmentP", "CellStyle"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "contentView"]
 - !private ["So18UITraitEnvironmentP", "fatalError"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - ["So23UIUserActivityRestoringP", "CellStyle"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "contentView"]
 - !private ["So23UIUserActivityRestoringP", "fatalError"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - ["So6UIViewC", "CellStyle"]
@@ -216,11 +238,13 @@ depends-member:
 - ["So6UIViewC", "String"]
 - ["So6UIViewC", "UITableViewCell"]
 - !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "contentView"]
 - !private ["So6UIViewC", "fatalError"]
 - ["So6UIViewC", "init"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "CellStyle"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "contentView"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "fatalError"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -237,6 +261,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "CellStyle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contentView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
@@ -272,9 +297,9 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- "9SplitNote0B4CellC"
 - !private "Sq"
 - !private "Sm"
-- "9SplitNote11RecentsCellC"
 - !private "ST"
 - !private "s12StaticStringV"
 - !private "SS"
@@ -344,4 +369,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b7c206db662d821e2b36a681c2d9f9af"
+interface-hash: "2499a2d2057f16575ddeb96af7c8f76a"

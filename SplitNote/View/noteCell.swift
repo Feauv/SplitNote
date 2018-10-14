@@ -1,5 +1,5 @@
 //
-//  recentsCell.swift
+//  noteCell.swift
 //  SplitNote
 //
 //  Created by Nick J Grove on 10/13/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecentsCell: UITableViewCell {
+class NoteCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
