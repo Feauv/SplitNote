@@ -51,6 +51,11 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     private func setupConstComponents() {
         
         homeView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
@@ -97,7 +102,8 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBAction func newNote(_ sender: Any?) {
         print("New Recording Started")
-        self.present(UINavigationController(rootViewController: NewNoteViewController()), animated: true, completion: nil)
+//        self.present(UINavigationController(rootViewController: NewNoteViewController()), animated: true, completion: nil)
+        navigationController?.pushViewController(NewNoteViewController(), animated: true)
         
     }
     
@@ -107,7 +113,9 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBAction func openFolders(_ sender: Any?) {
         print("Opening Folders")
-        self.present(UINavigationController(rootViewController: FolderViewController()), animated: true, completion: nil)
+//        self.present(UINavigationController(rootViewController: FolderViewController()), animated: true, completion: nil)
+        self.navigationController?.pushViewController(FolderViewController(), animated: true)
+
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
