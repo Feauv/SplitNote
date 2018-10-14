@@ -10,13 +10,12 @@ SplitNote is a mobile application that allows you to record audio with real time
 
 Coming soon:
   - Text highlighting
-  - Realtime sound metering using SoundWave
-
-Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  
+  - Realtime sound metering using SoundWave 
 
 #### Team
 
 Created by Nathaniel Banderas, Nick Grove, and Brendan Krekeler
+
 Logo by Joshua Moore
 
 ### Todos
