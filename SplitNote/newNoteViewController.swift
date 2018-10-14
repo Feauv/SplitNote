@@ -209,8 +209,15 @@ class NewNoteViewController: UIViewController {
         navigationItem.title = "SplitNote"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
+        let home = UIBarButtonItem(title: "HOME", style: .done, target: self, action: #selector(goHome))
+        
+        let folders = UIBarButtonItem(title: "FOLDERS", style: .done, target: self, action: #selector(goToFolders))
+        
+        home.tintColor = .white
+        folders.tintColor = .white
+        
         navigationItem.leftBarButtonItem = home
-        navigationItem.rightBarButtonItem = files
+        navigationItem.rightBarButtonItem = folders
         
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -226,23 +233,23 @@ class NewNoteViewController: UIViewController {
     
     }
     
-    let home: UIBarButtonItem = {
-        
-        let h = UIBarButtonItem()
-        h.title = "HOME"
-        h.tintColor = .white
-        return h
-        
-    }()
+//    let home: UIBarButtonItem = {
+//
+//        let h = UIBarButtonItem()
+//        h.title = "HOME"
+//        h.tintColor = .white
+//        return h
+//
+//    }()
     
-    let files: UIBarButtonItem = {
-        
-        let f = UIBarButtonItem()
-        f.title = "FILES"
-        f.tintColor = .white
-        return f
-        
-    }()
+//    let files: UIBarButtonItem = {
+//
+//        let f = UIBarButtonItem()
+//        f.title = "FILES"
+//        f.tintColor = .white
+//        return f
+//
+//    }()
     
     @IBAction func enterText(_ sender: Any?) {
         
@@ -275,6 +282,17 @@ class NewNoteViewController: UIViewController {
             self.transcription.textColor = .white
         }
         
+    }
+    
+    @objc func goHome() {
+        
+    self.present(homeViewController(), animated: true, completion: nil)
+
+        
+    }
+    
+    @objc func goToFolders(){
+        self.present(UINavigationController(rootViewController: FolderViewController()), animated: true, completion: nil)
     }
     
 }
